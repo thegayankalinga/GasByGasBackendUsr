@@ -2,6 +2,7 @@ using Azure.Identity;
 using backend.Data;
 using backend.Interfaces;
 using backend.Models;
+using backend.Repositories;
 using backend.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -19,6 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IOutletRepository, OutletRepository>();
 builder.Services.AddScoped<IKeyVaultService, KeyVaultService>();
 
 builder.Services.AddSwaggerGen(option =>

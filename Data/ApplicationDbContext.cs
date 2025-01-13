@@ -14,6 +14,7 @@ public class ApplicationDbContext: IdentityDbContext<AppUser>
 
     }
     // public DbSet<User> Users { get; set; }
+    public DbSet<Outlet> Outlets { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

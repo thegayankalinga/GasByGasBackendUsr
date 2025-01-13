@@ -160,3 +160,4 @@
 /Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 /Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Azure.Security.KeyVault.Secrets.dll
+/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.sourcelink.json
