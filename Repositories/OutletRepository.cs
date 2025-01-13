@@ -22,4 +22,9 @@ public class OutletRepository : IOutletRepository
     {
         return await _context.Outlets.FirstOrDefaultAsync(x => x.Id == id);
     }
+
+    public async Task<bool> OutletExists(int id)
+    {
+        return await _context.Outlets.AnyAsync(x => x.Id == id);
+    }
 }

@@ -161,3 +161,7 @@
 /Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 /Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Azure.Security.KeyVault.Secrets.dll
 /Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.sourcelink.json
+/Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/gayan/Developer/GasByGas/backend/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll

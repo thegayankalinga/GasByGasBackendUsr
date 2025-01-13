@@ -22,4 +22,8 @@ public class AppUser : IdentityUser
     public string? City { get; set; }
     
     public ConsumerType? ConsumerType { get; set; }
+    
+    //TODO: Add bool to see the confirmation if the personal users auto set to confirm and if the 
+    //Industries or business, admin to have a method to update confirmation 
+    //TODO: also add Business Registration Number to the model when the above changes are doing.
 }

@@ -15,8 +15,8 @@ public class Outlet
     
     [MaxLength(50)]
     public required string City { get; set; }
-    
-    
-    
-    
+
+    public int? Stock { get; set; } = 0;
+    //TODO: add stock update API and when delivery schedule is confirmed 
+
 }
