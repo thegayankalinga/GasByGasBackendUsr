@@ -9,5 +9,7 @@ public interface IGasTokenRepository
     Task<GasToken> CreateAsync(GasToken gasTokenModel);
     
     Task<GasToken> GetByIdAsync(int id);
-    
+
+    Task<List<GasToken>> GetAllByEmailAsync(string email);
+
 }

@@ -28,4 +28,9 @@ public class GasTokenRepository : IGasTokenRepository
     {
         return await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
     }
+
+    public async Task<List<GasToken>> GetAllByEmailAsync(string email)
+    {
+        return await _context.GasTokens.Where(x => x.UserEmail == email).ToListAsync();
+    }
 }

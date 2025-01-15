@@ -28,6 +28,15 @@ public class TokenController : ControllerBase
          var gasTokenDtos = gasTokens.Select(s => s.ToTokenResponseDto());
          return Ok(gasTokenDtos);
      }
+     
+     //Get all tokens by user 
+     [HttpGet("byuser/{email}")]
+     public async Task<IActionResult> GetAllByUser([FromRoute] string email)
+     {
+         var gasTokens = await _tokenRepo.GetAllByEmailAsync(email);
+         var gasToekDtos = gasTokens.Select(s => s.ToTokenResponseDto());
+         return Ok(gasToekDtos);
+     }
     
     //Get by Id
     [HttpGet("{id}")]
