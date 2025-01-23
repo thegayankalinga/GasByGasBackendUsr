@@ -36,7 +36,7 @@ builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
-        policy => policy.WithOrigins("http://localhost:3000") // Replace with your React frontend URL
+        policy => policy.WithOrigins("http://localhost:5173","http://localhost:3000", "https://icy-wave-0c56fec00.4.azurestaticapps.net/login") // Replace with your React frontend URL
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
