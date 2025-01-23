@@ -1,6 +1,7 @@
 using backend.Dtos.Outlet;
 using backend.Interfaces;
 using backend.Mappers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Controllers;
@@ -16,6 +17,7 @@ public class OutletController : ControllerBase
         _outletRepo = outletRepo;
     }
     
+    [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<OutletResponseDto>>> GetAll()
     {

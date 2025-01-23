@@ -32,6 +32,15 @@ builder.Services.AddScoped<IKeyVaultService, KeyVaultService>();
 builder.Services.AddScoped<IGasTokenRepository, GasTokenRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        policy => policy.WithOrigins("http://localhost:3000") // Replace with your React frontend URL
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 builder.Services.AddSwaggerGen(option =>
 {
     
@@ -142,6 +151,8 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+// Use CORS
+app.UseCors("AllowSpecificOrigins");
 app.MapControllers();
 
 app.Run();
