@@ -21,6 +21,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
     options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
     options.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
+    //options.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -46,6 +47,8 @@ builder.Services.AddSwaggerGen(option =>
 {
     
     option.SwaggerDoc("v1", new OpenApiInfo { Title = "Gas By Gas API", Version = "v1" });
+    option.SchemaFilter<EnumSchemaFilter>();
+    //option.UseInlineDefinitionsForEnums();
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
