@@ -31,6 +31,7 @@ builder.Services.AddScoped<IOutletRepository, OutletRepository>();
 builder.Services.AddScoped<IKeyVaultService, KeyVaultService>();
 builder.Services.AddScoped<IGasTokenRepository, GasTokenRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
 
 // Add CORS policy
 builder.Services.AddCors(options =>
@@ -125,7 +126,7 @@ builder.Services.AddAuthentication(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction() || app.Environment.IsStaging())
 {
     //app.MapOpenApi();
     app.UseSwagger();

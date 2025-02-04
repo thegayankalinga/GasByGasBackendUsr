@@ -1,3 +1,4 @@
+using System.Collections.Specialized;
 using backend.Dtos.GasToken;
 using backend.Interfaces;
 using backend.Mappers;
@@ -12,12 +13,14 @@ public class TokenController : ControllerBase
     private readonly IGasTokenRepository _tokenRepo;
     private readonly IOutletRepository _outletRepo;
     private readonly IAccountRepository _accountRepo;
+    private readonly IDeliveryRepository _deliveryRepo;
     
-    public TokenController(IGasTokenRepository tokenRepo, IOutletRepository outletRepo, IAccountRepository accountRepo)
+    public TokenController(IGasTokenRepository tokenRepo, IOutletRepository outletRepo, IAccountRepository accountRepo, IDeliveryRepository deliveryRepo)
     {
         _tokenRepo = tokenRepo;
         _accountRepo = accountRepo;
         _outletRepo = outletRepo;
+        _deliveryRepo = deliveryRepo;
     }
     
     //Get All
@@ -76,10 +79,38 @@ public class TokenController : ControllerBase
         //return CreatedAtAction(nameof(GetById), new{id = childModel}, childModel.ToChildDto());
     }
     //Put
-    [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateTokenDate([FromRoute] int id, [FromBody] CreateTokenRequestDto createTokenDto)
+    [HttpPut("expectedDate/{id}")]
+    public async Task<IActionResult> UpdateTokenExpectedDate([FromRoute] int id, [FromBody] CreateTokenRequestDto createTokenDto)
     {
         var tokenModel = await _tokenRepo.UpdateExpectedDateOfTokenAsync(id, createTokenDto);
+        if(tokenModel == null){return NotFound();}
+        return Ok(tokenModel.ToTokenResponseDto());
+    }
+    
+    //Put
+    [HttpPut("update/{id}")]
+    public async Task<IActionResult> UpdateToken([FromRoute] int id, [FromBody] UpdateTokenDto updateTokenDto){
+        
+        //if the user email not found 
+        var user = await _accountRepo.UserExists(updateTokenDto.UserEmail);
+        
+        if (!user)
+        {
+            return BadRequest("User does not exist");
+        }
+      
+        //if the delivery schedule id is not found
+        if (updateTokenDto.DeliveryScheduleId != null)
+        {
+            Console.WriteLine("inside the delivery schedule");
+            
+            var deliverySchedule = await _deliveryRepo.DeliveryExists((int)updateTokenDto.DeliveryScheduleId);
+            Console.WriteLine(deliverySchedule);
+            if(!deliverySchedule){return BadRequest("Delivery Schedule does not exist");}
+        }
+       
+        
+        var tokenModel= await _tokenRepo.UpdateTokenAsync(id, updateTokenDto);
         if(tokenModel == null){return NotFound();}
         return Ok(tokenModel.ToTokenResponseDto());
     }

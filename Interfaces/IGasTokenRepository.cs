@@ -17,4 +17,6 @@ public interface IGasTokenRepository
 
     Task<GasToken> UpdateExpectedDateOfTokenAsync(int id, CreateTokenRequestDto createTokenDto);
 
+    Task<GasToken> UpdateTokenAsync(int id, UpdateTokenDto updateTokenDto);
+
 }
