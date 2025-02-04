@@ -20,7 +20,7 @@ public class GasToken
 
     public required GasTokenStatus Status { get; set; } = GasTokenStatus.Pending;
     
-    public required ConsumerType ConsumerType { get; set; }
+    public required UserType UserType { get; set; }
     
     //TODO: This functions should be a Outlet Manager to update
     public bool IsEmpltyCylindersGivent { get; set; } = false;

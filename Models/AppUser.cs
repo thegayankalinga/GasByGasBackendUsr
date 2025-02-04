@@ -21,7 +21,7 @@ public class AppUser : IdentityUser
     [MaxLength(50)]
     public string? City { get; set; }
     
-    public ConsumerType? ConsumerType { get; set; }
+    public UserType? ConsumerType { get; set; }
     
     //TODO: Add bool to see the confirmation if the personal users auto set to confirm and if the 
     //Industries or business, admin to have a method to update confirmation 

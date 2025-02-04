@@ -43,7 +43,7 @@ public class AccountController : ControllerBase
                 PhoneNumber = requestDto.PhoneNumber,
                 Address = requestDto.Address,
                 City = requestDto.City,
-                ConsumerType = requestDto.ConsumerType
+                ConsumerType = requestDto.UserType
             };
             
             var createdUser = await _userManager.CreateAsync(appUser, requestDto.Password);
@@ -61,7 +61,7 @@ public class AccountController : ControllerBase
                                 PhoneNumber = appUser.PhoneNumber,
                                 Address = appUser.Address,  
                                 City = appUser.City,
-                                ConsumerType = appUser.ConsumerType ?? ConsumerType.Personal,
+                                UserType = appUser.ConsumerType ?? UserType.Personal,
                                 Token = await _tokenService.CreateToken(appUser)
                             }
                     );
@@ -107,7 +107,7 @@ public class AccountController : ControllerBase
             PhoneNumber = user.PhoneNumber ?? throw new InvalidOperationException(),
             Address = user.Address ?? throw new InvalidOperationException(),  
             City = user.City ?? throw new InvalidOperationException(),
-            ConsumerType = user.ConsumerType ?? ConsumerType.Personal,
+            UserType = user.ConsumerType ?? UserType.Personal,
             Token = await _tokenService.CreateToken(user)
         });
     }

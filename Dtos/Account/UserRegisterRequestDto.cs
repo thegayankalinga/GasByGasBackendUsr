@@ -35,7 +35,7 @@ public class UserRegisterRequestDto
     public required string City { get; set; }
     
     [Required]
-    [EnumDataType(typeof(ConsumerType))]
-    public ConsumerType ConsumerType { get; set; } 
+    [EnumDataType(typeof(UserType))]
+    public UserType UserType { get; set; } 
     
 }

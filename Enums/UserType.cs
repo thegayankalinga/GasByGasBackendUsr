@@ -2,7 +2,7 @@ using System.Runtime.Serialization;
 
 namespace backend.Enums;
 
-public enum ConsumerType
+public enum UserType
 {
     [EnumMember(Value = "Personal")]
     Personal = 0,

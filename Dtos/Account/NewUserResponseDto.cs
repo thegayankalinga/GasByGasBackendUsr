@@ -13,8 +13,8 @@ public class NewUserResponseDto
     public required string Address { get; set; }
     public required string City { get; set; }
     
-    [EnumDataType(typeof(ConsumerType))]
-    public ConsumerType ConsumerType { get; set; }
+    [EnumDataType(typeof(UserType))]
+    public UserType UserType { get; set; }
     public required string Token { get; set; }
 
 }

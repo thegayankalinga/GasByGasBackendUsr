@@ -20,7 +20,7 @@ public static class TokenMapper
             IsPaid = tokenModel.IsPaid,
             PaymentDate = tokenModel.PaymentDate,
             IsEmpltyCylindersGiven = tokenModel.IsEmpltyCylindersGivent,
-            ConsumerType = tokenModel.ConsumerType,
+            UserType = tokenModel.UserType,
             UserEmail = tokenModel.UserEmail,
             OutletId = tokenModel.OutletId,
             DeliveryScheduleId = tokenModel.DeliveryScheduleId
@@ -34,7 +34,7 @@ public static class TokenMapper
             RequestDate = DateOnly.FromDateTime(DateTime.Now),
             ExpectedPickupDate = createTokenDto.ExpectedPickupDate,
             Status = GasTokenStatus.Pending,
-            ConsumerType = createTokenDto.ConsumerType,
+            UserType = createTokenDto.UserType,
             UserEmail = userEmail,
             OutletId = outletId
         };

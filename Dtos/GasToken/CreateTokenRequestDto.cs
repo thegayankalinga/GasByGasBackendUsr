@@ -8,5 +8,5 @@ public class CreateTokenRequestDto
     
     [DataType(DataType.Date)]
     public required DateOnly ExpectedPickupDate { get; set; }
-    public required ConsumerType ConsumerType { get; set; }
+    public required UserType UserType { get; set; }
 }

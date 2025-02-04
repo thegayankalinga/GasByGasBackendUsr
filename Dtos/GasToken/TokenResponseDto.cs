@@ -11,7 +11,7 @@ public class TokenResponseDto
     public DateOnly? ReadyDate { get; set; }
     public required DateOnly ExpectedPickupDate { get; set; }
     public required GasTokenStatus Status { get; set; } 
-    public required ConsumerType ConsumerType { get; set; }
+    public required UserType UserType { get; set; }
     
     public bool IsEmpltyCylindersGiven { get; set; }
     
