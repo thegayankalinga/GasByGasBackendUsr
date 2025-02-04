@@ -1,4 +1,5 @@
 using backend.Data;
+using backend.Dtos.GasToken;
 using backend.Interfaces;
 using backend.Models;
 using Microsoft.EntityFrameworkCore;
@@ -37,5 +38,21 @@ public class GasTokenRepository : IGasTokenRepository
     public async Task<List<GasToken>> GetAllByOutletAsync(int outletId)
     {
         return await _context.GasTokens.Where(x => x.OutletId == outletId).ToListAsync();
+    }
+
+    
+    //Update the Expected PickUp Date
+    public async Task<GasToken> UpdateExpectedDateOfTokenAsync(int id, CreateTokenRequestDto createTokenDto)
+    {
+        var tokenModel = await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
+        if (tokenModel == null)
+        {
+            return null;
+        }
+
+        tokenModel.ExpectedPickupDate = createTokenDto.ExpectedPickupDate;
+        
+        await _context.SaveChangesAsync();
+        return tokenModel;
     }
 }

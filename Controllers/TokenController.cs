@@ -76,6 +76,13 @@ public class TokenController : ControllerBase
         //return CreatedAtAction(nameof(GetById), new{id = childModel}, childModel.ToChildDto());
     }
     //Put
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateTokenDate([FromRoute] int id, [FromBody] CreateTokenRequestDto createTokenDto)
+    {
+        var tokenModel = await _tokenRepo.UpdateExpectedDateOfTokenAsync(id, createTokenDto);
+        if(tokenModel == null){return NotFound();}
+        return Ok(tokenModel.ToTokenResponseDto());
+    }
     
     //Delete
 }

@@ -1,3 +1,4 @@
+using backend.Dtos.GasToken;
 using backend.Models;
 
 namespace backend.Interfaces;
@@ -13,5 +14,7 @@ public interface IGasTokenRepository
     Task<List<GasToken>> GetAllByEmailAsync(string email);
     
     Task<List<GasToken>> GetAllByOutletAsync(int outletId);
+
+    Task<GasToken> UpdateExpectedDateOfTokenAsync(int id, CreateTokenRequestDto createTokenDto);
 
 }
