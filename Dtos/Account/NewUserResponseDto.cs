@@ -14,8 +14,8 @@ public class NewUserResponseDto
     public bool IsConfirm { get; set; }
     public int? OutletId { get; set; }
     public required string PhoneNumber { get; set; }
-    public string Address { get; set; }
-    public string City { get; set; }
+    public string? Address { get; set; }
+    public string? City { get; set; }
     
     [EnumDataType(typeof(UserType))]
     public UserType UserType { get; set; }

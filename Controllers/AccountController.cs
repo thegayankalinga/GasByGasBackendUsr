@@ -301,13 +301,15 @@ public class AccountController : ControllerBase
         {
             Email = user.Email ?? throw new InvalidOperationException(),
             FullName = user.FullName ?? throw new InvalidOperationException(),
-            NIC = user.NIC ?? throw new InvalidOperationException(),
-            BusinessRegistration = user.BusinessRegistration ?? throw new InvalidOperationException(),
+            NIC = user.NIC,
+            BusinessRegistration = user.BusinessRegistration,
             IsConfirm = user.IsConfirm,
             OutletId = user.OutletId,
             PhoneNumber = user.PhoneNumber ?? throw new InvalidOperationException(),
-            Address = user.Address ?? throw new InvalidOperationException(),  
-            City = user.City ?? throw new InvalidOperationException(),
+            Address = user.Address, 
+            City = user.City,
+            RemainingCylindersAllowed = user.RemainingCylindersAllowed,
+            NoOfCylindersAllowed = user.NoOfCylindersAllowed,
             UserType = user.ConsumerType ?? UserType.Personal,
             Token = await _tokenService.CreateToken(user)
         });
