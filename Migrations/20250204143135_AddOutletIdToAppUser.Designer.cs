@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.Data;
 
@@ -11,9 +12,11 @@ using backend.Data;
 namespace backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250204143135_AddOutletIdToAppUser")]
+    partial class AddOutletIdToAppUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,19 +54,19 @@ namespace backend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4180775f-c2b0-4d05-a5f2-87ff441fb54e",
+                            Id = "e1eb9999-61c2-4c9f-8fb0-f47bdb5d0686",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "384f39a6-60a7-4593-a98c-19c8381a5bbf",
+                            Id = "ea0f2f0e-7966-460d-8fcb-c27c2a4a2c1e",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "8d2b499c-dc35-433f-ba77-ee353e4ebdf7",
+                            Id = "0c6c9195-c4f8-43a5-96e0-1e972ddfd3ea",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -226,9 +229,6 @@ namespace backend.Migrations
                         .HasMaxLength(13)
                         .HasColumnType("nvarchar(13)");
 
-                    b.Property<int?>("NoOfCylindersAllowed")
-                        .HasColumnType("int");
-
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -248,9 +248,6 @@ namespace backend.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<int?>("RemainingCylindersAllowed")
-                        .HasColumnType("int");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

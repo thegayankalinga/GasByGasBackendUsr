@@ -8,7 +8,7 @@ public enum UserType
     Personal = 0,
     [EnumMember(Value = "Business")]
     Business = 1,
-    [EnumMember(Value = "Industries")]
+    [EnumMember(Value = "Industry")]
     Industries = 2,
     [EnumMember(Value = "Admin")]
     Admin = 3,

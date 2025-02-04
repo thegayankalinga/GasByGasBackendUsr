@@ -12,8 +12,13 @@ public class AppUser : IdentityUser
     [MaxLength(13)]
     public string? NIC { get; set; }
     
+    [MaxLength(50)]
+    public string? BusinessRegistration { get; set; }
+    
+    public bool IsConfirm { get; set; }
+    
     // [MaxLength(15)]
-    // public string? PhoneNumber { get; set; }
+    //public string? PhoneNumber { get; set; }
     
     [MaxLength(300)]
     public string? Address { get; set; }
@@ -23,7 +28,10 @@ public class AppUser : IdentityUser
     
     public UserType? ConsumerType { get; set; }
     
-    //TODO: Add bool to see the confirmation if the personal users auto set to confirm and if the 
-    //Industries or business, admin to have a method to update confirmation 
-    //TODO: also add Business Registration Number to the model when the above changes are doing.
+    public int? OutletId { get; set; }
+    
+    public int? NoOfCylindersAllowed { get; set; }
+    
+    public int? RemainingCylindersAllowed { get; set; }
+    
 }
