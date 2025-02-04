@@ -11,5 +11,7 @@ public interface IGasTokenRepository
     Task<GasToken> GetByIdAsync(int id);
 
     Task<List<GasToken>> GetAllByEmailAsync(string email);
+    
+    Task<List<GasToken>> GetAllByOutletAsync(int outletId);
 
 }

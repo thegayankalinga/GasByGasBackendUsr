@@ -37,6 +37,15 @@ public class TokenController : ControllerBase
          var gasToekDtos = gasTokens.Select(s => s.ToTokenResponseDto());
          return Ok(gasToekDtos);
      }
+     
+     //Get all tokens by outlet
+     [HttpGet("byoutlet/{outletId}")]
+     public async Task<IActionResult> GetAllByOutlet([FromRoute] int outletId)
+     {
+         var gasTokens = await _tokenRepo.GetAllByOutletAsync(outletId);
+         var gasTokensDtos = gasTokens.Select(s => s.ToTokenResponseDto());
+         return Ok(gasTokensDtos);
+     }
     
     //Get by Id
     [HttpGet("{id}")]
@@ -53,12 +62,12 @@ public class TokenController : ControllerBase
     public async Task<IActionResult> Create([FromQuery] int outletId, [FromQuery]string consumerEmail, [FromBody] CreateTokenRequestDto createTokenDto){
         //Check if the parent is existing
         if(!await _accountRepo.UserExists(consumerEmail)){
-            return BadRequest("User do not exist");
+            return BadRequest("User does not exist");
         }
 
         if (!await _outletRepo.OutletExists(outletId))
         {
-            return BadRequest("Outlet do not exist");
+            return BadRequest("Outlet does not exist");
         }
 
         var tokenModel = createTokenDto.ToTokenFromCreateTokenDto(outletId, consumerEmail);
