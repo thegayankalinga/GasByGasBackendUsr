@@ -34,6 +34,7 @@ builder.Services.AddScoped<IGasTokenRepository, GasTokenRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
 builder.Services.AddScoped<ISmsService, SmsService>();
+builder.Services.AddScoped<IMailService, MailService>();
 
 // Add CORS policy
 builder.Services.AddCors(options =>

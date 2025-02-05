@@ -33,8 +33,6 @@ public class SmsService : ISmsService
 
         _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(smskey));
         _secret = smskey;
-        Console.WriteLine(_key);
-        Console.WriteLine(_secret);
     }
 
     public async Task<bool> SendSmsAsync(string recipient, string message)
