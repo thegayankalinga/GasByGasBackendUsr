@@ -27,4 +27,5 @@ public class OutletRepository : IOutletRepository
     {
         return await _context.Outlets.AnyAsync(x => x.Id == id);
     }
+    
 }

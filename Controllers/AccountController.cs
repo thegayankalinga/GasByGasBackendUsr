@@ -1,6 +1,7 @@
 using backend.Dtos.Account;
 using backend.Enums;
 using backend.Interfaces;
+using backend.Mappers;
 using backend.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -17,15 +18,37 @@ public class AccountController : ControllerBase
     private readonly ITokenService _tokenService;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly IOutletRepository _outletRepository;
+    private readonly IAccountRepository _accountRepo;
     
     const int NO_OF_CYLINDERS_ALLOWED = 3;
     
-    public AccountController(UserManager<AppUser> userManager, ITokenService tokenService, SignInManager<AppUser> signInManager, IOutletRepository outletRepository)
+    public AccountController(UserManager<AppUser> userManager, ITokenService tokenService, SignInManager<AppUser> signInManager, IOutletRepository outletRepository, IAccountRepository accountRepo)
     {
         _userManager = userManager;
         _tokenService = tokenService;
         _signInManager = signInManager;
         _outletRepository = outletRepository;
+        _accountRepo = accountRepo;
+    }
+
+
+    [HttpGet("getManagers/{outletId}")]
+    public async Task<IActionResult> GetManagers(int outletId)
+    {
+        var outlet = await _outletRepository.OutletExists(outletId);
+        if (outlet == null)
+        {
+            return NotFound("Outlet not found");
+        }
+        
+       
+        var managers = await _accountRepo.GetManagersByOutletIdAsync(outletId);
+        if (!managers.Any())
+        {
+            return NoContent();
+        }
+        var managerReponseDtos = managers.Select(s => s.ToManagerReponseDto());
+        return Ok(managerReponseDtos);
     }
     
     //Controller Starts here
