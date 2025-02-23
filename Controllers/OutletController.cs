@@ -17,7 +17,7 @@ public class OutletController : ControllerBase
         _outletRepo = outletRepo;
     }
     
-    [Authorize]
+    // [Authorize]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<OutletResponseDto>>> GetAll()
     {
@@ -36,4 +36,6 @@ public class OutletController : ControllerBase
         }
         return Ok(outlet.ToUserResponseDto());
     }
+    
+
 }

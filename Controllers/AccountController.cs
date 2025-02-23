@@ -314,5 +314,160 @@ public class AccountController : ControllerBase
             Token = await _tokenService.CreateToken(user)
         });
     }
+
+    [HttpPut("update/{email}")]
+    public async Task<IActionResult> UpdateUser([FromRoute] string email, [FromBody] UpdateUserDto updateUserDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found");
+            
+            // Update user properties
+            user.Email = updateUserDto.Email ?? user.Email;
+            user.UserName = updateUserDto.Email ?? user.UserName;
+            user.FullName = updateUserDto.FullName ?? user.FullName;
+            user.PhoneNumber = updateUserDto.PhoneNumber ?? user.PhoneNumber;
+
+            if (updateUserDto.ConsumerType == UserType.Personal)
+            {
+                user.NIC = updateUserDto.NIC ?? user.NIC;
+                user.City = updateUserDto.City ?? user.City;
+                user.Address = updateUserDto.Address ?? user.Address;
+               
+            }
+            
+            if (updateUserDto.ConsumerType == UserType.Manager)
+            {
+                user.OutletId = updateUserDto.OutletId ?? user.OutletId;
+            }
+
+            if (updateUserDto.ConsumerType == UserType.Business || updateUserDto.ConsumerType == UserType.Industries)
+            {
+                user.BusinessRegistration = updateUserDto.BusinessRegistration ?? user.BusinessRegistration;
+                user.City = updateUserDto.City ?? user.City;
+                user.Address = updateUserDto.Address ?? user.Address;
+               
+            }
+           
+            
+            var result = await _userManager.UpdateAsync(user);
+            if(!result.Succeeded) return StatusCode(500, result.Errors);
+
+            var updatedUser = await _userManager.FindByEmailAsync(email);
+            return Ok(new NewUserResponseDto
+            {
+                //Force unwrap the null here
+                Email = updatedUser!.Email ?? throw new InvalidOperationException(),
+                FullName = updatedUser.FullName ?? throw new InvalidOperationException(),
+                NIC = updatedUser.NIC,
+                BusinessRegistration = updatedUser.BusinessRegistration,
+                IsConfirm = updatedUser.IsConfirm,
+                OutletId = updatedUser.OutletId,
+                PhoneNumber = updatedUser.PhoneNumber ?? throw new InvalidOperationException(),
+                Address = updatedUser.Address, 
+                City = updatedUser.City,
+                RemainingCylindersAllowed = updatedUser.RemainingCylindersAllowed,
+                NoOfCylindersAllowed = updatedUser.NoOfCylindersAllowed,
+                UserType = updatedUser.ConsumerType ?? UserType.Personal,
+                Token = await _tokenService.CreateToken(updatedUser)
+            });
+
+        }catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    
+    [HttpPut("updateConfirmStatus/{email}")]
+    public async Task<IActionResult> UpdateUserConfirmation([FromRoute] string email, UpdateConfimDto updateConfimDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+        
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found");
+            
+            // Update user properties
+
+            user.IsConfirm = updateConfimDto.IsConfirm;
+           
+            
+            var result = await _userManager.UpdateAsync(user);
+            
+            if(!result.Succeeded) return StatusCode(500, result.Errors);
+            return Ok(new { message = "User updated successfully with confirmation status" });
+        
+        }catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpPut("updateReminaingCylinders/{email}")]
+    public async Task<IActionResult> UpdateRemainingCylinders([FromRoute] string email, UpdateRemainingCylinders remainingCylindersDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+        
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found");
+            
+            // Update user properties
+
+            user.RemainingCylindersAllowed = remainingCylindersDto.RemainingCylindersAllowed;
+            
+            var result = await _userManager.UpdateAsync(user);
+            if(!result.Succeeded) return StatusCode(500, result.Errors);
+            
+            return Ok(new { message = "User updated successfully with new remaining cylinders" });
+        
+        }catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpPut("updateAllowedCylinders/{email}")]
+    public async Task<IActionResult> UpdateAllowedCylinders([FromRoute] string email, UpdateAllowedCylindersDto allowedCylindersDto)
+    {
+        try
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+        
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found");
+            
+            // Update user properties
+
+            user.NoOfCylindersAllowed = allowedCylindersDto.NoOfCylindersAllowed;
+            
+            var result = await _userManager.UpdateAsync(user);
+            if(!result.Succeeded) return StatusCode(500, result.Errors);
+            
+            return Ok(new { message = "User updated successfully with new no of allowed cylinders" });
+        
+        }catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
     
 }
