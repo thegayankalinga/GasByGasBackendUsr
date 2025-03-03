@@ -50,6 +50,19 @@ public class AccountController : ControllerBase
         var managerReponseDtos = managers.Select(s => s.ToManagerReponseDto());
         return Ok(managerReponseDtos);
     }
+
+    [HttpGet("getConsumers")]
+    public async Task<IActionResult> GetConsumers()
+    {
+        var consumers = await _accountRepo.GetConsumersAsync();
+        if (!consumers.Any())
+        {
+            return NoContent();
+        }
+
+        var consumerReponseDtos = consumers.Select(s => s.ToConsumerResponseDto());
+        return Ok(consumerReponseDtos);
+    }
     
     //Controller Starts here
     [HttpPost("register")]

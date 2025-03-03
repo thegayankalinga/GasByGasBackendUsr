@@ -17,4 +17,22 @@ public static class UserMappers
             OutletId = userModel.OutletId,
         };
     }
+
+    public static ConsumerResponseDto ToConsumerResponseDto(this AppUser userModel)
+    {
+        return new ConsumerResponseDto
+        {
+            Email = userModel.Email,
+            FullName = userModel.FullName,
+            NIC = userModel.NIC,
+            BusinessRegistration = userModel.BusinessRegistration,
+            IsConfirm = userModel.IsConfirm,
+            PhoneNumber = userModel.PhoneNumber,
+            Address = userModel.Address,
+            City = userModel.City,
+            UserType = userModel.ConsumerType,
+            NoOfCylindersAllowed = userModel.NoOfCylindersAllowed,
+            RemainingCylindersAllowed = userModel.RemainingCylindersAllowed
+        };
+    }
 }

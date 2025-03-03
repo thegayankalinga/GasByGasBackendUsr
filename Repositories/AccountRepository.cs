@@ -1,4 +1,5 @@
 using backend.Data;
+using backend.Enums;
 using backend.Interfaces;
 using backend.Models;
 using Microsoft.EntityFrameworkCore;
@@ -21,5 +22,16 @@ public class AccountRepository : IAccountRepository
     public async Task<List<AppUser>> GetManagersByOutletIdAsync(int outletId)
     {
         return await _context.Users.Where(s => s.OutletId == outletId).ToListAsync();
+    }
+
+    public async Task<List<AppUser>> GetConsumersAsync()
+    {
+        var filteredUsers = await _context.Users
+            .Where(u => u.ConsumerType == UserType.Personal || 
+                                u.ConsumerType == UserType.Business || 
+                                u.ConsumerType == UserType.Industries)
+            .ToListAsync();
+        return filteredUsers;
+        
     }
 }
