@@ -270,6 +270,27 @@
           }
         },
         {
+          "ruleId": "CS8619",
+          "level": "warning",
+          "message": "Nullability of reference types in value of type 'List<StockRequest?>' doesn't match target type 'List<StockRequest>'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 16,
+                  "endLine": 20,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS0472",
           "level": "warning",
           "message": "The result of the expression is always 'false' since a value of type 'bool' is never equal to 'null' of type 'bool?'",
@@ -291,18 +312,60 @@
           }
         },
         {
-          "ruleId": "CS8600",
+          "ruleId": "CS8603",
           "level": "warning",
-          "message": "Converting null literal or possible null value to non-nullable type.",
+          "message": "Possible null reference return.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/OutletRepository.cs",
                 "region": {
-                  "startLine": 78,
-                  "startColumn": 46,
-                  "endLine": 78,
-                  "endColumn": 50
+                  "startLine": 23,
+                  "startColumn": 16,
+                  "endLine": 23,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 56,
+                  "endLine": 25,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8619",
+          "level": "warning",
+          "message": "Nullability of reference types in value of type 'List<StockRequest?>' doesn't match target type 'List<StockRequest>'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 16,
+                  "endLine": 25,
+                  "endColumn": 93
                 }
               }
             }
@@ -354,90 +417,6 @@
           }
         },
         {
-          "ruleId": "CS8619",
-          "level": "warning",
-          "message": "Nullability of reference types in value of type 'List<StockRequest?>' doesn't match target type 'List<StockRequest>'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 16,
-                  "endLine": 20,
-                  "endColumn": 58
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "The variable 'e' is declared but never used",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
-                "region": {
-                  "startLine": 524,
-                  "startColumn": 26,
-                  "endLine": 524,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Dereference of a possibly null reference.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 56,
-                  "endLine": 25,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8619",
-          "level": "warning",
-          "message": "Nullability of reference types in value of type 'List<StockRequest?>' doesn't match target type 'List<StockRequest>'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 16,
-                  "endLine": 25,
-                  "endColumn": 93
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8602",
           "level": "warning",
           "message": "Dereference of a possibly null reference.",
@@ -480,18 +459,18 @@
           }
         },
         {
-          "ruleId": "CS8603",
+          "ruleId": "CS8600",
           "level": "warning",
-          "message": "Possible null reference return.",
+          "message": "Converting null literal or possible null value to non-nullable type.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/OutletRepository.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 23,
-                  "startColumn": 16,
-                  "endLine": 23,
-                  "endColumn": 75
+                  "startLine": 78,
+                  "startColumn": 46,
+                  "endLine": 78,
+                  "endColumn": 50
                 }
               }
             }
@@ -501,24 +480,24 @@
           }
         },
         {
-          "ruleId": "S2068",
+          "ruleId": "CS0168",
           "level": "warning",
-          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "message": "The variable 'e' is declared but never used",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/appsettings.json",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
                 "region": {
-                  "startLine": 2,
-                  "startColumn": 25,
-                  "endLine": 2,
-                  "endColumn": 213
+                  "startLine": 524,
+                  "startColumn": 26,
+                  "endLine": 524,
+                  "endColumn": 27
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1
+            "warningLevel": 3
           }
         },
         {
@@ -732,6 +711,79 @@
           }
         },
         {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'User not found' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 364,
+                  "startColumn": 33,
+                  "endLine": 364,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 434,
+                  "startColumn": 33,
+                  "endLine": 434,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 463,
+                  "startColumn": 33,
+                  "endLine": 463,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 491,
+                  "startColumn": 33,
+                  "endLine": 491,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "region": {
+                  "startLine": 516,
+                  "startColumn": 33,
+                  "endLine": 516,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
@@ -782,9 +834,9 @@
               "resultFile": {
                 "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
                 "region": {
-                  "startLine": 58,
+                  "startLine": 59,
                   "startColumn": 5,
-                  "endLine": 58,
+                  "endLine": 59,
                   "endColumn": 45
                 }
               }
@@ -803,9 +855,9 @@
               "resultFile": {
                 "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
                 "region": {
-                  "startLine": 105,
+                  "startLine": 106,
                   "startColumn": 5,
-                  "endLine": 105,
+                  "endLine": 106,
                   "endColumn": 48
                 }
               }
@@ -824,9 +876,9 @@
               "resultFile": {
                 "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
                 "region": {
-                  "startLine": 141,
+                  "startLine": 148,
                   "startColumn": 5,
-                  "endLine": 141,
+                  "endLine": 148,
                   "endColumn": 24
                 }
               }
@@ -845,9 +897,9 @@
               "resultFile": {
                 "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
                 "region": {
-                  "startLine": 145,
+                  "startLine": 152,
                   "startColumn": 9,
-                  "endLine": 145,
+                  "endLine": 152,
                   "endColumn": 74
                 }
               }
@@ -866,9 +918,9 @@
               "resultFile": {
                 "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
                 "region": {
-                  "startLine": 149,
+                  "startLine": 156,
                   "startColumn": 5,
-                  "endLine": 149,
+                  "endLine": 156,
                   "endColumn": 9
                 }
               }
@@ -921,466 +973,6 @@
           }
         },
         {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 24,
-                  "endLine": 16,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 24,
-                  "endLine": 26,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 24,
-                  "endLine": 41,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 24,
-                  "endLine": 55,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 24,
-                  "endLine": 60,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 65,
-                  "startColumn": 24,
-                  "endLine": 65,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 24,
-                  "endLine": 80,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 24,
-                  "endLine": 16,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 24,
-                  "endLine": 26,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 78,
-                  "startColumn": 24,
-                  "endLine": 78,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 24,
-                  "endLine": 92,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 97,
-                  "startColumn": 24,
-                  "endLine": 97,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 102,
-                  "startColumn": 24,
-                  "endLine": 102,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 151,
-                  "startColumn": 24,
-                  "endLine": 151,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetUsers' 10 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 24,
-                  "endLine": 32,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 24,
-                  "endLine": 42,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 24,
-                  "endLine": 52,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 62,
-                  "startColumn": 24,
-                  "endLine": 62,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 72,
-                  "startColumn": 24,
-                  "endLine": 72,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 108,
-                  "startColumn": 24,
-                  "endLine": 108,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 112,
-                  "startColumn": 24,
-                  "endLine": 112,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 122,
-                  "startColumn": 24,
-                  "endLine": 122,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 132,
-                  "startColumn": 24,
-                  "endLine": 132,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 142,
-                  "startColumn": 24,
-                  "endLine": 142,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null,
-              "7": null,
-              "8": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'nvarchar(max)' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 26,
-                  "endLine": 37,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 26,
-                  "endLine": 47,
-                  "endColumn": 41
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 26,
-                  "endLine": 57,
-                  "endColumn": 41
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 26,
-                  "endLine": 67,
-                  "endColumn": 41
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 113,
-                  "startColumn": 23,
-                  "endLine": 113,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 123,
-                  "startColumn": 23,
-                  "endLine": 123,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 133,
-                  "startColumn": 23,
-                  "endLine": 133,
-                  "endColumn": 38
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 143,
-                  "startColumn": 23,
-                  "endLine": 143,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
@@ -1393,6 +985,27 @@
                   "startColumn": 9,
                   "endLine": 20,
                   "endColumn": 203
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_smsService' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 34,
+                  "endLine": 14,
+                  "endColumn": 45
                 }
               }
             }
@@ -2021,16 +1634,16 @@
         {
           "ruleId": "S1192",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'User not found' 5 times.",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 364,
-                  "startColumn": 33,
-                  "endLine": 364,
-                  "endColumn": 49
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
                 }
               }
             }
@@ -2038,45 +1651,78 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 434,
-                  "startColumn": 33,
-                  "endLine": 434,
-                  "endColumn": 49
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 463,
-                  "startColumn": 33,
-                  "endLine": 463,
-                  "endColumn": 49
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 491,
-                  "startColumn": 33,
-                  "endLine": 491,
-                  "endColumn": 49
+                  "startLine": 78,
+                  "startColumn": 24,
+                  "endLine": 78,
+                  "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 516,
-                  "startColumn": 33,
-                  "endLine": 516,
-                  "endColumn": 49
+                  "startLine": 92,
+                  "startColumn": 24,
+                  "endLine": 92,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 24,
+                  "endLine": 97,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 24,
+                  "endLine": 102,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 24,
+                  "endLine": 151,
+                  "endColumn": 37
                 }
               }
             }
@@ -2087,7 +1733,361 @@
               "0": null,
               "1": null,
               "2": null,
-              "3": null
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetUsers' 10 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 24,
+                  "endLine": 32,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 24,
+                  "endLine": 42,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 24,
+                  "endLine": 52,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 24,
+                  "endLine": 62,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 24,
+                  "endLine": 72,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 24,
+                  "endLine": 108,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 24,
+                  "endLine": 112,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 24,
+                  "endLine": 122,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 24,
+                  "endLine": 132,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 24,
+                  "endLine": 142,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'nvarchar(max)' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 26,
+                  "endLine": 37,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 26,
+                  "endLine": 47,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 26,
+                  "endLine": 57,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 26,
+                  "endLine": 67,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 23,
+                  "endLine": 113,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 23,
+                  "endLine": 123,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 23,
+                  "endLine": 133,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 23,
+                  "endLine": 143,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 24,
+                  "endLine": 55,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 24,
+                  "endLine": 60,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 24,
+                  "endLine": 65,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 24,
+                  "endLine": 80,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
             }
           }
         },
@@ -2207,11 +2207,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 16,
+                  "startLine": 17,
                   "startColumn": 24,
-                  "endLine": 16,
+                  "endLine": 17,
                   "endColumn": 37
                 }
               }
@@ -2220,77 +2220,77 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 21,
+                  "startLine": 22,
                   "startColumn": 24,
-                  "endLine": 21,
+                  "endLine": 22,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 26,
+                  "startLine": 27,
                   "startColumn": 24,
-                  "endLine": 26,
+                  "endLine": 27,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 46,
+                  "startLine": 49,
                   "startColumn": 24,
-                  "endLine": 46,
+                  "endLine": 49,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 63,
+                  "startLine": 66,
                   "startColumn": 24,
-                  "endLine": 63,
+                  "endLine": 66,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 68,
+                  "startLine": 71,
                   "startColumn": 24,
-                  "endLine": 68,
+                  "endLine": 71,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 73,
+                  "startLine": 76,
                   "startColumn": 24,
-                  "endLine": 73,
+                  "endLine": 76,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 78,
+                  "startLine": 81,
                   "startColumn": 24,
-                  "endLine": 78,
+                  "endLine": 81,
                   "endColumn": 37
                 }
               }
@@ -2425,7 +2425,395 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 24,
+                  "endLine": 46,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 24,
+                  "endLine": 63,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 24,
+                  "endLine": 68,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 24,
+                  "endLine": 73,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 24,
+                  "endLine": 78,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 24,
+                  "endLine": 50,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 24,
+                  "endLine": 64,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 24,
+                  "endLine": 69,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 24,
+                  "endLine": 74,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 24,
+                  "endLine": 92,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetUsers' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 24,
+                  "endLine": 37,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 24,
+                  "endLine": 44,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 24,
+                  "endLine": 80,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 24,
+                  "endLine": 84,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 24,
+                  "endLine": 37,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 24,
+                  "endLine": 51,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 24,
+                  "endLine": 56,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 24,
+                  "endLine": 61,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 24,
+                  "endLine": 70,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 24,
@@ -2438,7 +2826,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 22,
                   "startColumn": 24,
@@ -2449,7 +2837,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 27,
                   "startColumn": 24,
@@ -2460,7 +2848,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 49,
                   "startColumn": 24,
@@ -2471,7 +2859,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 66,
                   "startColumn": 24,
@@ -2482,7 +2870,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 71,
                   "startColumn": 24,
@@ -2493,7 +2881,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 76,
                   "startColumn": 24,
@@ -2504,7 +2892,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
                   "startLine": 81,
                   "startColumn": 24,
@@ -2704,7 +3092,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
                   "startLine": 16,
                   "startColumn": 24,
@@ -2717,7 +3105,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
                   "startLine": 21,
                   "startColumn": 24,
@@ -2728,7 +3116,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
                   "startLine": 26,
                   "startColumn": 24,
@@ -2739,51 +3127,51 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
-                  "startLine": 37,
+                  "startLine": 36,
                   "startColumn": 24,
-                  "endLine": 37,
+                  "endLine": 36,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
-                  "startLine": 51,
+                  "startLine": 50,
                   "startColumn": 24,
-                  "endLine": 51,
+                  "endLine": 50,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
-                  "startLine": 56,
+                  "startLine": 55,
                   "startColumn": 24,
-                  "endLine": 56,
+                  "endLine": 55,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
-                  "startLine": 61,
+                  "startLine": 60,
                   "startColumn": 24,
-                  "endLine": 61,
+                  "endLine": 60,
                   "endColumn": 37
                 }
               }
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
                 "region": {
                   "startLine": 70,
                   "startColumn": 24,
@@ -2803,367 +3191,6 @@
               "4": null,
               "5": null,
               "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1075",
-          "level": "warning",
-          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SmsService.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 35,
-                  "endLine": 12,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 24,
-                  "endLine": 16,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 24,
-                  "endLine": 26,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 24,
-                  "endLine": 50,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 24,
-                  "endLine": 64,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 24,
-                  "endLine": 69,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 24,
-                  "endLine": 74,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 24,
-                  "endLine": 92,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetUsers' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 24,
-                  "endLine": 37,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 24,
-                  "endLine": 44,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 24,
-                  "endLine": 80,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 24,
-                  "endLine": 84,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 24,
-                  "endLine": 16,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 24,
-                  "endLine": 26,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 24,
-                  "endLine": 43,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 57,
-                  "startColumn": 24,
-                  "endLine": 57,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 62,
-                  "startColumn": 24,
-                  "endLine": 62,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 67,
-                  "startColumn": 24,
-                  "endLine": 67,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 24,
-                  "endLine": 83,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1192",
-          "level": "warning",
-          "message": "Define a constant instead of using this literal 'DeliverySchedules' 4 times.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 24,
-                  "endLine": 32,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 24,
-                  "endLine": 36,
-                  "endColumn": 43
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 24,
-                  "endLine": 73,
-                  "endColumn": 43
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 77,
-                  "startColumn": 24,
-                  "endLine": 77,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null
             }
           }
         },
@@ -3258,6 +3285,115 @@
                   "startLine": 70,
                   "startColumn": 24,
                   "endLine": 70,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 24,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 24,
+                  "endLine": 26,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 24,
+                  "endLine": 57,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 24,
+                  "endLine": 62,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 24,
+                  "endLine": 67,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 24,
+                  "endLine": 83,
                   "endColumn": 37
                 }
               }
@@ -3388,6 +3524,67 @@
         {
           "ruleId": "S1192",
           "level": "warning",
+          "message": "Define a constant instead of using this literal 'DeliverySchedules' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 24,
+                  "endLine": 32,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 24,
+                  "endLine": 36,
+                  "endColumn": 43
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 24,
+                  "endLine": 73,
+                  "endColumn": 43
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 77,
+                  "startColumn": 24,
+                  "endLine": 77,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
           "message": "Define a constant instead of using this literal 'StockRequests' 4 times.",
           "locations": [
             {
@@ -3447,127 +3644,18 @@
           }
         },
         {
-          "ruleId": "S1192",
+          "ruleId": "S1075",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SmsService.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 24,
-                  "endLine": 17,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 24,
-                  "endLine": 22,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 24,
-                  "endLine": 27,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 24,
-                  "endLine": 49,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 24,
-                  "endLine": 66,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 24,
-                  "endLine": 71,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 76,
-                  "startColumn": 24,
-                  "endLine": 76,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 24,
-                  "endLine": 81,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
-            }
-          }
-        },
-        {
-          "ruleId": "S4487",
-          "level": "warning",
-          "message": "Remove this unread private field '_smsService' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 34,
-                  "endLine": 14,
-                  "endColumn": 45
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 74
                 }
               }
             }
@@ -3577,112 +3665,45 @@
           }
         },
         {
-          "ruleId": "S1192",
+          "ruleId": "S1186",
           "level": "warning",
-          "message": "Define a constant instead of using this literal 'AspNetRoles' 8 times.",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs",
                 "region": {
-                  "startLine": 16,
-                  "startColumn": 24,
-                  "endLine": 16,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 24,
-                  "endLine": 21,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 24,
-                  "endLine": 26,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 24,
-                  "endLine": 36,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 24,
-                  "endLine": 50,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 24,
-                  "endLine": 55,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 60,
-                  "startColumn": 24,
-                  "endLine": 60,
-                  "endColumn": 37
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 24,
-                  "endLine": 70,
-                  "endColumn": 37
+                  "startLine": 25,
+                  "startColumn": 20,
+                  "endLine": 25,
+                  "endColumn": 46
                 }
               }
             }
           ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null,
-              "1": null,
-              "2": null,
-              "3": null,
-              "4": null,
-              "5": null,
-              "6": null
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'modelBuilder' to 'builder' to match the base class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 58,
+                  "endLine": 29,
+                  "endColumn": 70
+                }
+              }
             }
+          ],
+          "properties": {
+            "warningLevel": 1
           }
         },
         {
@@ -3735,18 +3756,66 @@
           }
         },
         {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 26,
+                  "endLine": 42,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 26,
+                  "endLine": 81,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
           "ruleId": "S927",
           "level": "warning",
-          "message": "Rename parameter 'modelBuilder' to 'builder' to match the base class declaration.",
+          "message": "Rename parameter 'model' to 'schema' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/EnumSchemaFilter.cs",
                 "region": {
-                  "startLine": 29,
-                  "startColumn": 58,
-                  "endLine": 29,
-                  "endColumn": 70
+                  "startLine": 10,
+                  "startColumn": 37,
+                  "endLine": 10,
+                  "endColumn": 42
                 }
               }
             }
@@ -3756,18 +3825,18 @@
           }
         },
         {
-          "ruleId": "CA1860",
+          "ruleId": "CA1861",
           "level": "note",
-          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/StockController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 28,
-                  "startColumn": 14,
-                  "endLine": 28,
-                  "endColumn": 33
+                  "startLine": 79,
+                  "startColumn": 26,
+                  "endLine": 79,
+                  "endColumn": 86
                 }
               }
             }
@@ -3775,23 +3844,23 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "DiagnosticPropertyKey": "Count"
+              "paramName": "columns"
             }
           }
         },
         {
-          "ruleId": "CA1860",
+          "ruleId": "CA1861",
           "level": "note",
-          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/StockController.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
                 "region": {
-                  "startLine": 47,
-                  "startColumn": 14,
-                  "endLine": 47,
-                  "endColumn": 33
+                  "startLine": 152,
+                  "startColumn": 26,
+                  "endLine": 152,
+                  "endColumn": 86
                 }
               }
             }
@@ -3799,44 +3868,23 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "DiagnosticPropertyKey": "Count"
+              "paramName": "columns"
             }
           }
         },
         {
-          "ruleId": "S6964",
+          "ruleId": "S927",
           "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "message": "Rename parameter 'requestDto' to 'scheduleRequest' to match the interface declaration.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestDto.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 16,
-                  "endLine": 8,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6964",
-          "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Dtos/GasToken/UpdateTokenDto.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 17,
-                  "endLine": 12,
-                  "endColumn": 40
+                  "startLine": 55,
+                  "startColumn": 81,
+                  "endLine": 55,
+                  "endColumn": 91
                 }
               }
             }
@@ -3894,6 +3942,27 @@
           }
         },
         {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'message'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 16,
+                  "endLine": 88,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA1861",
           "level": "note",
           "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
@@ -3924,11 +3993,56 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113150334_AddOutletModel.cs",
                 "region": {
-                  "startLine": 42,
+                  "startLine": 61,
                   "startColumn": 26,
-                  "endLine": 42,
+                  "endLine": 61,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Dtos/GasToken/UpdateTokenDto.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 17,
+                  "endLine": 12,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 26,
+                  "endLine": 38,
                   "endColumn": 86
                 }
               }
@@ -3948,11 +4062,422 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113150334_AddOutletModel.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
                 "region": {
-                  "startLine": 61,
+                  "startLine": 93,
                   "startColumn": 26,
-                  "endLine": 61,
+                  "endLine": 93,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 26,
+                  "endLine": 51,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 26,
+                  "endLine": 71,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204150718_AddedNoOfAllowedCylinders.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 26,
+                  "endLine": 44,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'stockRequestModel' to 'stockRequest' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 75,
+                  "endLine": 38,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 26,
+                  "endLine": 79,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'updateRequest' to 'stockRequest' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 99,
+                  "endLine": 45,
+                  "endColumn": 112
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 1,
+                  "endLine": 176,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 26,
+                  "endLine": 47,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S1656",
+          "level": "warning",
+          "message": "Remove or correct this useless self-assignment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 9,
+                  "endLine": 51,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 39,
+                  "endLine": 51,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1656",
+          "level": "warning",
+          "message": "Remove or correct this useless self-assignment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 9,
+                  "endLine": 52,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 43,
+                  "endLine": 52,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1656",
+          "level": "warning",
+          "message": "Remove or correct this useless self-assignment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 9,
+                  "endLine": 53,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 49,
+                  "endLine": 53,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/StockController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 14,
+                  "endLine": 28,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 26,
+                  "endLine": 83,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 26,
+                  "endLine": 46,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'dbConnectionString'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 5,
+                  "endLine": 141,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 26,
+                  "endLine": 82,
                   "endColumn": 86
                 }
               }
@@ -3993,11 +4518,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113100117_RemoveDuplicatedPhoneNumber.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
                 "region": {
-                  "startLine": 81,
+                  "startLine": 50,
                   "startColumn": 26,
-                  "endLine": 81,
+                  "endLine": 50,
                   "endColumn": 86
                 }
               }
@@ -4029,6 +4554,378 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113075023_InitialMigration.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 26,
+                  "endLine": 167,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 44,
+                  "endLine": 41,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenTable.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 26,
+                  "endLine": 37,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenTable.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 26,
+                  "endLine": 71,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestDto.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113182339_NewThreeTables.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 26,
+                  "endLine": 99,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1860",
+          "level": "note",
+          "message": "Prefer comparing 'Count' to 0 rather than using 'Any()', both for clarity and for performance",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Controllers/StockController.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 14,
+                  "endLine": 47,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "DiagnosticPropertyKey": "Count"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113182339_NewThreeTables.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 26,
+                  "endLine": 63,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 26,
+                  "endLine": 50,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204150718_AddedNoOfAllowedCylinders.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 26,
+                  "endLine": 81,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 48,
+                  "endLine": 88,
+                  "endColumn": 128
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 26,
+                  "endLine": 44,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 48,
+                  "endLine": 88,
+                  "endColumn": 128
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 26,
+                  "endLine": 37,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 26,
+                  "endLine": 84,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 26,
+                  "endLine": 71,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
           }
         },
         {
@@ -4453,38 +5350,17 @@
           }
         },
         {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
-                "region": {
-                  "startLine": 41,
-                  "startColumn": 44,
-                  "endLine": 41,
-                  "endColumn": 94
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1861",
           "level": "note",
           "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
+                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
                 "region": {
-                  "startLine": 79,
+                  "startLine": 82,
                   "startColumn": 26,
-                  "endLine": 79,
+                  "endLine": 82,
                   "endColumn": 86
                 }
               }
@@ -4495,120 +5371,6 @@
             "customProperties": {
               "paramName": "columns"
             }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
-                "region": {
-                  "startLine": 47,
-                  "startColumn": 26,
-                  "endLine": 47,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113082929_UpdateAppUserMaxLength.cs",
-                "region": {
-                  "startLine": 152,
-                  "startColumn": 26,
-                  "endLine": 152,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113151554_AddOutLetModelNew.cs",
-                "region": {
-                  "startLine": 79,
-                  "startColumn": 26,
-                  "endLine": 79,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "S2629",
-          "level": "warning",
-          "message": "Don't use string interpolation in logging message templates.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 48,
-                  "endLine": 88,
-                  "endColumn": 128
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 48,
-                  "endLine": 88,
-                  "endColumn": 128
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
           }
         },
         {
@@ -4624,27 +5386,6 @@
                   "startColumn": 17,
                   "endLine": 5,
                   "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6966",
-          "level": "warning",
-          "message": "Await RunAsync instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Program.cs",
-                "region": {
-                  "startLine": 169,
-                  "startColumn": 1,
-                  "endLine": 169,
-                  "endColumn": 10
                 }
               }
             }
@@ -4675,30 +5416,6 @@
           }
         },
         {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113075023_InitialMigration.cs",
-                "region": {
-                  "startLine": 167,
-                  "startColumn": 26,
-                  "endLine": 167,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
           "ruleId": "S6964",
           "level": "warning",
           "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
@@ -4720,51 +5437,6 @@
           }
         },
         {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'model' to 'schema' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Services/EnumSchemaFilter.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 37,
-                  "endLine": 10,
-                  "endColumn": 42
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 26,
-                  "endLine": 50,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
           "ruleId": "S6964",
           "level": "warning",
           "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
@@ -4777,678 +5449,6 @@
                   "startColumn": 16,
                   "endLine": 5,
                   "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113182339_NewThreeTables.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 26,
-                  "endLine": 63,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 26,
-                  "endLine": 51,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 26,
-                  "endLine": 37,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 26,
-                  "endLine": 71,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'stockRequestModel' to 'stockRequest' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 75,
-                  "endLine": 38,
-                  "endColumn": 92
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113182339_NewThreeTables.cs",
-                "region": {
-                  "startLine": 99,
-                  "startColumn": 26,
-                  "endLine": 99,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 26,
-                  "endLine": 93,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'updateRequest' to 'stockRequest' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 99,
-                  "endLine": 45,
-                  "endColumn": 112
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1656",
-          "level": "warning",
-          "message": "Remove or correct this useless self-assignment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 9,
-                  "endLine": 51,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 39,
-                  "endLine": 51,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1656",
-          "level": "warning",
-          "message": "Remove or correct this useless self-assignment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 9,
-                  "endLine": 52,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 52,
-                  "startColumn": 43,
-                  "endLine": 52,
-                  "endColumn": 74
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null
-            }
-          }
-        },
-        {
-          "ruleId": "S1656",
-          "level": "warning",
-          "message": "Remove or correct this useless self-assignment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 9,
-                  "endLine": 53,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs",
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 49,
-                  "endLine": 53,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": null
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 26,
-                  "endLine": 71,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdToAppUser.cs",
-                "region": {
-                  "startLine": 38,
-                  "startColumn": 26,
-                  "endLine": 38,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 26,
-                  "endLine": 82,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204150718_AddedNoOfAllowedCylinders.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 26,
-                  "endLine": 44,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250204150718_AddedNoOfAllowedCylinders.cs",
-                "region": {
-                  "startLine": 81,
-                  "startColumn": 26,
-                  "endLine": 81,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 82,
-                  "startColumn": 26,
-                  "endLine": 82,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 26,
-                  "endLine": 50,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs",
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 26,
-                  "endLine": 46,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs",
-                "region": {
-                  "startLine": 83,
-                  "startColumn": 26,
-                  "endLine": 83,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenTable.cs",
-                "region": {
-                  "startLine": 71,
-                  "startColumn": 26,
-                  "endLine": 71,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenTable.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 26,
-                  "endLine": 37,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 26,
-                  "endLine": 44,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "CA1861",
-          "level": "note",
-          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Migrations/20250308162621_UpdatedDeliverySchedule.cs",
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 26,
-                  "endLine": 84,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "paramName": "columns"
-            }
-          }
-        },
-        {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 20,
-                  "endLine": 25,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'message'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs",
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 16,
-                  "endLine": 88,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'requestDto' to 'scheduleRequest' to match the interface declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs",
-                "region": {
-                  "startLine": 55,
-                  "startColumn": 81,
-                  "endLine": 55,
-                  "endColumn": 91
                 }
               }
             }
@@ -5743,22 +5743,6 @@
               "C#",
               "MainSourceScope",
               "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S2068": {
-          "id": "S2068",
-          "shortDescription": "Hard-coded credentials are security-sensitive",
-          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
-          "properties": {
-            "category": "Blocker Security Hotspot",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
               "SonarWay"
             ]
           }
