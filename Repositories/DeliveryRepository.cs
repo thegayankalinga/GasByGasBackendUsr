@@ -20,12 +20,12 @@ public class DeliveryRepository: IDeliveryRepository
         return await _context.DeliverySchedules.AnyAsync(s => s.Id == id);
     }
 
-    public async Task<List<DeliverySchedule>> GetConfirmedDeliveriesForDate(DateTime date)
+    public async Task<List<DeliverySchedule>> GetConfirmedDeliveriesForDate(DateOnly date)
     {
-        DateOnly deliveryDate = DateOnly.FromDateTime(date);
+        
         
         return await _context.DeliverySchedules
-            .Where(d => d.ConfirmedByAdmin && d.DeliveryDate == deliveryDate)
+            .Where(d => d.ConfirmedByAdmin && d.DeliveryDate == date)
             .ToListAsync();
     }
 }

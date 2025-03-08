@@ -36,6 +36,8 @@ builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
 builder.Services.AddScoped<ISmsService, SmsService>();
 builder.Services.AddScoped<IMailService, MailService>();
 
+builder.Services.AddSingleton<SchedulerService>(); // Allow Controller access
+
 builder.Services.AddHostedService<SchedulerService>();
 
 // Add CORS policy

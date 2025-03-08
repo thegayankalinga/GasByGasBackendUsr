@@ -18,6 +18,8 @@ public class ApplicationDbContext: IdentityDbContext<AppUser>
     public DbSet<GasToken> GasTokens { get; set; }
     public DbSet<DeliverySchedule> DeliverySchedules { get; set; }
     
+    public DbSet<StockRequest> StockRequests { get; set; }
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.ConfigureWarnings(warnings =>
