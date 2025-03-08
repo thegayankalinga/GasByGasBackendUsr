@@ -20,5 +20,7 @@ public interface IGasTokenRepository
     Task<GasToken> UpdateTokenAsync(int id, UpdateTokenDto updateTokenDto);
     
     Task<GasToken> DeleteTokenAsync(int id);
+    
+    Task<List<GasToken>> GetGasTokensByDeliveryScheduleIdAsync(int deliveryScheduleId);
 
 }

@@ -36,6 +36,8 @@ builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
 builder.Services.AddScoped<ISmsService, SmsService>();
 builder.Services.AddScoped<IMailService, MailService>();
 
+builder.Services.AddHostedService<SchedulerService>();
+
 // Add CORS policy
 builder.Services.AddCors(options =>
 {

@@ -28,8 +28,6 @@ public class GasToken
     //TODO: Keep a Gas Prices as a constant for now. when the delivery is assigned price needs to be added 
     [Precision(18,2)]
     public decimal? Price { get; set; }
-    
-    //TODO: add a API to update the payment status. 
     public bool IsPaid { get; set; } = false;
     
     public DateOnly? PaymentDate { get; set; }
