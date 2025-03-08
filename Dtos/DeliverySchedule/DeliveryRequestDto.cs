@@ -1,20 +1,13 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace backend.Models;
+namespace backend.Dtos.DeliverySchedule;
 
-public class DeliverySchedule
+public class DeliveryRequestDto
 {
-    [Key]
-    public int Id { get; set; }
     public required DateOnly DeliveryDate { get; set; }
-    public required bool ConfirmedByAdmin { get; set; } = false;
-    
+    public required bool ConfirmedByAdmin { get; set; }
     public required int NoOfUnitsInDelivery { get; set; }
-    
     public required int OutletId { get; set; }
-    
     [MaxLength(30)]
     public required string DispatcherVehicleId { get; set; }
-    
-    
 }

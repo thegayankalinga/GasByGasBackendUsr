@@ -19,7 +19,7 @@ public static class TokenMapper
             Price = tokenModel.Price,
             IsPaid = tokenModel.IsPaid,
             PaymentDate = tokenModel.PaymentDate,
-            IsEmpltyCylindersGiven = tokenModel.IsEmpltyCylindersGivent,
+            IsEmpltyCylindersGiven = tokenModel.IsEmptyCylinderGiven,
             UserType = tokenModel.UserType,
             UserEmail = tokenModel.UserEmail,
             OutletId = tokenModel.OutletId,

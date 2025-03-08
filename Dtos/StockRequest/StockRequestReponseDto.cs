@@ -1,15 +1,13 @@
-using System.ComponentModel.DataAnnotations;
+namespace backend.Dtos.StockRequest;
 
-namespace backend.Models;
-
-public class StockRequest
+public class StockRequestReponseDto
 {
-    [Key]
+
     public int Id { get; set; }
     
     public required int OutletId { get; set; }
     
-    public required DateOnly RequestedDate { get; set; }  
+    public DateOnly RequestedDate { get; set; }
     
     public DateOnly? CompletedDate { get; set; }
 
@@ -20,5 +18,4 @@ public class StockRequest
     public int NoOfUnitsRequired { get; set; }
     
     public int NoOfUnitsDispatched { get; set; }
-    
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.Data;
 
@@ -11,9 +12,11 @@ using backend.Data;
 namespace backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250308162621_UpdatedDeliverySchedule")]
+    partial class UpdatedDeliverySchedule
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,19 +54,19 @@ namespace backend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "77f49f7f-84d6-47d4-8c9d-58f7968e36bd",
+                            Id = "c93eaa5c-cb91-4db6-bbaa-d1b33aff0fde",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "123a58ff-84dd-4aa2-9645-957343d7a7bd",
+                            Id = "b5c4019e-b2e6-44ec-9e75-c71174b58df1",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "6708d8e7-89c1-463b-a61d-ffa095fcc718",
+                            Id = "06615676-4523-47b4-b99f-3885e0fd2ec1",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -319,7 +322,7 @@ namespace backend.Migrations
                     b.Property<DateOnly>("ExpectedPickupDate")
                         .HasColumnType("date");
 
-                    b.Property<bool>("IsEmptyCylinderGiven")
+                    b.Property<bool>("IsEmpltyCylindersGivent")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsPaid")

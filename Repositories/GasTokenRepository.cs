@@ -19,6 +19,7 @@ public class GasTokenRepository : IGasTokenRepository
         _mailService = mailService;
         _smsService = smsService;
     }
+    
     public async Task<List<GasToken>> GetAllAsync()
     {
         return await _context.GasTokens.ToListAsync();
@@ -31,7 +32,7 @@ public class GasTokenRepository : IGasTokenRepository
         return gasTokenModel;
     }
 
-    public async Task<GasToken> GetByIdAsync(int id)
+    public async Task<GasToken?> GetByIdAsync(int id)
     {
         return await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
     }
@@ -45,10 +46,9 @@ public class GasTokenRepository : IGasTokenRepository
     {
         return await _context.GasTokens.Where(x => x.OutletId == outletId).ToListAsync();
     }
-
     
     //Update the Expected PickUp Date
-    public async Task<GasToken> UpdateExpectedDateOfTokenAsync(int id, CreateTokenRequestDto createTokenDto)
+    public async Task<GasToken?> UpdateExpectedDateOfTokenAsync(int id, CreateTokenRequestDto createTokenDto)
     {
         var tokenModel = await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
         if (tokenModel == null)
@@ -65,7 +65,7 @@ public class GasTokenRepository : IGasTokenRepository
         return tokenModel;
     }
 
-    public async Task<GasToken> UpdateTokenAsync(int id, UpdateTokenDto updateTokenDto)
+    public async Task<GasToken?> UpdateTokenAsync(int id, UpdateTokenDto updateTokenDto)
     {
         var tokenModel = await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
         
@@ -77,7 +77,7 @@ public class GasTokenRepository : IGasTokenRepository
         tokenModel.ReadyDate = updateTokenDto.ReadyDate;
         tokenModel.ExpectedPickupDate = updateTokenDto.ExpectedPickupDate;
         tokenModel.Status = updateTokenDto.Status;
-        tokenModel.IsEmpltyCylindersGivent = updateTokenDto.IsEmpltyCylindersGivent;
+        tokenModel.IsEmptyCylinderGiven = updateTokenDto.IsEmpltyCylindersGivent;
         tokenModel.IsPaid = updateTokenDto.IsPaid;
         tokenModel.PaymentDate = updateTokenDto.PaymentDate;
         tokenModel.UserEmail = updateTokenDto.UserEmail;
@@ -97,7 +97,7 @@ public class GasTokenRepository : IGasTokenRepository
         return tokenModel;
     }
 
-    public async Task<GasToken> DeleteTokenAsync(int id)
+    public async Task<GasToken?> DeleteTokenAsync(int id)
     {
         var gasTokenModel = await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
         

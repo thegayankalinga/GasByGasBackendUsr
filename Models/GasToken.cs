@@ -22,8 +22,7 @@ public class GasToken
     
     public required UserType UserType { get; set; }
     
-    //TODO: This functions should be a Outlet Manager to update
-    public bool IsEmpltyCylindersGivent { get; set; } = false;
+    public bool IsEmptyCylinderGiven { get; set; } = false;
     
     //TODO: Keep a Gas Prices as a constant for now. when the delivery is assigned price needs to be added 
     [Precision(18,2)]

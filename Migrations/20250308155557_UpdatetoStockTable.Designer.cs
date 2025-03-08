@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backend.Data;
 
@@ -11,9 +12,11 @@ using backend.Data;
 namespace backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250308155557_UpdatetoStockTable")]
+    partial class UpdatetoStockTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,19 +54,19 @@ namespace backend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "77f49f7f-84d6-47d4-8c9d-58f7968e36bd",
+                            Id = "cc0cd097-227e-4af6-a358-744359127b10",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "123a58ff-84dd-4aa2-9645-957343d7a7bd",
+                            Id = "d9a0be8f-d4fa-4b51-9d6d-fc4ff3412eee",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "6708d8e7-89c1-463b-a61d-ffa095fcc718",
+                            Id = "7018b219-3ec0-4340-bcad-d3b41208b3e6",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         });
@@ -289,10 +292,8 @@ namespace backend.Migrations
                     b.Property<DateOnly>("DeliveryDate")
                         .HasColumnType("date");
 
-                    b.Property<string>("DispatcherVehicleId")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                    b.Property<int>("DispatcherId")
+                        .HasColumnType("int");
 
                     b.Property<int>("NoOfUnitsInDelivery")
                         .HasColumnType("int");
@@ -319,7 +320,7 @@ namespace backend.Migrations
                     b.Property<DateOnly>("ExpectedPickupDate")
                         .HasColumnType("date");
 
-                    b.Property<bool>("IsEmptyCylinderGiven")
+                    b.Property<bool>("IsEmpltyCylindersGivent")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsPaid")
