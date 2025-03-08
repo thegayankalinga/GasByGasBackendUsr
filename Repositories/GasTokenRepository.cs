@@ -78,4 +78,17 @@ public class GasTokenRepository : IGasTokenRepository
         await _context.SaveChangesAsync();
         return tokenModel;
     }
+
+    public async Task<GasToken> DeleteTokenAsync(int id)
+    {
+        var gasTokenModel = await _context.GasTokens.FirstOrDefaultAsync(x => x.Id == id);
+        
+        if (gasTokenModel == null)
+        {
+            return null;
+        }
+        _context.GasTokens.Remove(gasTokenModel);
+        await _context.SaveChangesAsync();
+        return gasTokenModel;
+    }
 }

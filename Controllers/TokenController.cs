@@ -78,6 +78,7 @@ public class TokenController : ControllerBase
         return CreatedAtAction(nameof(GetById), new{id = tokenModel.Id}, tokenModel.ToTokenResponseDto());
         //return CreatedAtAction(nameof(GetById), new{id = childModel}, childModel.ToChildDto());
     }
+    
     //Put
     [HttpPut("expectedDate/{id}")]
     public async Task<IActionResult> UpdateTokenExpectedDate([FromRoute] int id, [FromBody] CreateTokenRequestDto createTokenDto)
@@ -116,4 +117,17 @@ public class TokenController : ControllerBase
     }
     
     //Delete
+    [HttpDelete]
+    [RouteAttribute("{tokenId}")]
+    public async Task<IActionResult> DeleteGasToken([FromRoute] int tokenId)
+    {
+        var gasTokenModel = await _tokenRepo.DeleteTokenAsync(tokenId);
+        if (gasTokenModel == null)
+        {
+            return NotFound();
+        }
+
+         
+        return NoContent();
+    }
 }
