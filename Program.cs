@@ -9,27 +9,48 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-//using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+// ✅ Initialize Azure Key Vault Configuration Before `builder.Build()`
+var keyVaultUri = builder.Configuration["AzureKeyVault:VaultUri"];
+if (!string.IsNullOrEmpty(keyVaultUri))
+{
+    builder.Configuration.AddAzureKeyVault(
+        new Uri(keyVaultUri),
+        new DefaultAzureCredential());
+}
+
+// ✅ Register Key Vault Service (Before Fetching Secrets)
+builder.Services.AddSingleton<IKeyVaultService, KeyVaultService>();
+
+// ✅ Create a Temporary Service Provider to Fetch the Connection String Before `builder.Build()`
+using var tempProvider = builder.Services.BuildServiceProvider();
+var keyVaultService = tempProvider.GetRequiredService<IKeyVaultService>();
+var dbConnectionString = await keyVaultService.GetSecretAsync("DbConnectionString");
+
+// ✅ Register Database Context with the Connection String from Azure Key Vault
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(dbConnectionString));
+
+// ✅ Fetch JWT Signing Key Before `builder.Build()`
+var signingKey = await keyVaultService.GetSecretAsync("lmusigningkey");
+
+// ✅ Add Core Services
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
     options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
     options.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
     options.SerializerSettings.DateTimeZoneHandling = Newtonsoft.Json.DateTimeZoneHandling.Utc;
-    //options.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
 });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
+// ✅ Register Dependencies (Repositories & Services)
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IOutletRepository, OutletRepository>();
-builder.Services.AddScoped<IKeyVaultService, KeyVaultService>();
 builder.Services.AddScoped<IGasTokenRepository, GasTokenRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 builder.Services.AddScoped<IDeliveryRepository, DeliveryRepository>();
@@ -37,25 +58,24 @@ builder.Services.AddScoped<ISmsService, SmsService>();
 builder.Services.AddScoped<IMailService, MailService>();
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 
-builder.Services.AddSingleton<SchedulerService>(); // Allow Controller access
-
+// ✅ Register Background Services
+builder.Services.AddSingleton<SchedulerService>();
 builder.Services.AddHostedService<SchedulerService>();
 
-// Add CORS policy
+// ✅ CORS Configuration
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
-        policy => policy.WithOrigins("http://localhost:5173","http://localhost:3000", "https://icy-wave-0c56fec00.4.azurestaticapps.net/login") // Replace with your React frontend URL
+        policy => policy.WithOrigins("http://localhost:5173", "http://localhost:3000", "https://icy-wave-0c56fec00.4.azurestaticapps.net/login")
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
 
+// ✅ Swagger Configuration
 builder.Services.AddSwaggerGen(option =>
 {
-    
     option.SwaggerDoc("v1", new OpenApiInfo { Title = "Gas By Gas API", Version = "v1" });
     option.SchemaFilter<EnumSchemaFilter>();
-    //option.UseInlineDefinitionsForEnums();
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         In = ParameterLocation.Header,
@@ -72,8 +92,8 @@ builder.Services.AddSwaggerGen(option =>
             {
                 Reference = new OpenApiReference
                 {
-                    Type=ReferenceType.SecurityScheme,
-                    Id="Bearer"
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
                 }
             },
             []
@@ -81,20 +101,7 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-
-var keyVaultUri = builder.Configuration["AzureKeyVault:VaultUri"];
-if (!string.IsNullOrEmpty(keyVaultUri))
-{
-    builder.Configuration.AddAzureKeyVault(
-        new Uri(keyVaultUri),
-        new DefaultAzureCredential());
-}
-var signingKey = builder.Configuration["lmusigningkey"];
-
+// ✅ Identity Configuration
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = false;
@@ -102,12 +109,12 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = false;
     options.Password.RequiredLength = 6;
-    //options.Password.RequiredUniqueChars = 0;
     options.SignIn.RequireConfirmedEmail = false;
     options.SignIn.RequireConfirmedPhoneNumber = false;
     options.User.RequireUniqueEmail = true;
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+// ✅ Authentication & JWT Configuration
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme =
@@ -129,40 +136,18 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+var app = builder.Build(); // ✅ No service modifications after this point.
 
-
-
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
+// ✅ Configure the HTTP Request Pipeline
 if (app.Environment.IsDevelopment() || app.Environment.IsProduction() || app.Environment.IsStaging())
 {
-    //app.MapOpenApi();
     app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        //options.SwaggerEndpoint("/openapi/v1.json", "Gas By Gas APIs");
-    });
-    
-    // app.MapScalarApiReference(options =>
-    // {
-    //     options
-    //         .WithTitle("Gas By Gas APIs")
-    //         .WithTheme(ScalarTheme.Kepler)
-    //         .WithDarkModeToggle(true)
-    //         .WithDarkMode(false)
-    //         .WithDefaultHttpClient(ScalarTarget.JavaScript, ScalarClient.Fetch)
-    //         ;
-    //
-    // });
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
-
-// Use CORS
 app.UseCors("AllowSpecificOrigins");
 app.MapControllers();
 
