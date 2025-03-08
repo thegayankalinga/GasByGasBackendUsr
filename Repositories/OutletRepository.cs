@@ -27,5 +27,11 @@ public class OutletRepository : IOutletRepository
     {
         return await _context.Outlets.AnyAsync(x => x.Id == id);
     }
-    
+
+    public async Task<Outlet> CreateOutletAsync(Outlet outletModel)
+    {
+         await _context.Outlets.AddAsync(outletModel);
+         await _context.SaveChangesAsync();
+         return outletModel;
+    }
 }

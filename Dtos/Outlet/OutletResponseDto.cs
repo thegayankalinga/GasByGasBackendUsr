@@ -10,4 +10,6 @@ public class OutletResponseDto
     
     public required string City { get; set; }
     
+    public int? Stock { get; set; }
+    
 }
