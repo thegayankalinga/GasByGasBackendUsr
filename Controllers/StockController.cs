@@ -1,7 +1,6 @@
 using backend.Dtos.StockRequest;
 using backend.Interfaces;
 using backend.Mappers;
-using backend.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend.Controllers;
@@ -26,7 +25,8 @@ public class StockController: ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var stockRequests = await _stockRepository.GetAllStockRequestsAsync();
-        var stockRequestResponseDto = stockRequests.Select(s => s.StockRequestToStockRequestResponseDto());
+        if (!stockRequests.Any()) return new NoContentResult();
+        var stockRequestResponseDto = stockRequests.Select(s => s!.StockRequestToStockRequestResponseDto());
         return Ok(stockRequestResponseDto);
     }
 
@@ -44,6 +44,7 @@ public class StockController: ControllerBase
     {
         
         var stockRequests = await _stockRepository.GetAllStockRequestsByOutletIdAsync(id);
+        if (!stockRequests.Any()) return new NoContentResult();
         if (stockRequests == null)return NotFound("No stock request found for that outlet");
         
         var stockRequestResponseDtos = stockRequests.Select(s => s.StockRequestToStockRequestResponseDto());
@@ -95,6 +96,28 @@ public class StockController: ControllerBase
         
         var stockRequestResponseDto = stockRequest.StockRequestToStockRequestResponseDto();
         return Ok(stockRequestResponseDto);
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteStockRequest([FromRoute] int id)
+    {
+        try
+        {
+            var existingStockRequest = await _stockRepository.GetStockRequestByIdAsync(id);
+            if (existingStockRequest == null)
+                return NotFound("Stock request not found");
+
+            var result = await _stockRepository.DeleteStockRequestAsync(id);
+            if (result == null)
+                return StatusCode(500, "An error occurred while deleting the stock request.");
+
+            return Ok(new { message = $"Stock request with ID {id} deleted successfully" });
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, "An error occurred while deleting the stock request.");
+        }
     }
     
 }

@@ -15,14 +15,14 @@ public class StockRepository: IStockRepository
         _context = context;
     }
 
-    public async Task<List<StockRequest?>> GetAllStockRequestsAsync()
+    public async Task<List<StockRequest>> GetAllStockRequestsAsync()
     {
         return await _context.StockRequests.ToListAsync();
     }
 
-    public async Task<List<StockRequest?>> GetAllStockRequestsByOutletIdAsync(int outletId)
+    public async Task<List<StockRequest>> GetAllStockRequestsByOutletIdAsync(int outletId)
     {
-        return await _context.StockRequests.Where(s => s != null && s.OutletId == outletId).ToListAsync();
+        return await _context.StockRequests.Where(s => s.OutletId == outletId).ToListAsync();
     }
 
     public async Task<StockRequest?> GetStockRequestByIdAsync(int id)
@@ -30,7 +30,7 @@ public class StockRepository: IStockRepository
         return await _context.StockRequests.FindAsync(id);
     }
 
-    public async Task<List<StockRequest?>> GetAllStockRequestsByDeliveryIdAsync(int deliveryId)
+    public async Task<List<StockRequest>> GetAllStockRequestsByDeliveryIdAsync(int deliveryId)
     {
         return await _context.StockRequests.Where(s=> s.DeliveryScheduleId == deliveryId).ToListAsync();
     }

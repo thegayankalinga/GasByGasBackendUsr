@@ -10,7 +10,7 @@ public class AppUser : IdentityUser
     public string? FullName { get; set; }
     
     [MaxLength(13)]
-    public string? NIC { get; set; }
+    public string? Nic { get; set; }
     
     [MaxLength(50)]
     public string? BusinessRegistration { get; set; }

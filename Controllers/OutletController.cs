@@ -47,5 +47,27 @@ public class OutletController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = outletModel.Id },
             outletModel.ToOutletResponseDtofromModel());
     }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteOutlet([FromRoute] int id)
+    {
+        try
+        {
+            var existingOutlet = await _outletRepo.GetOutletByIdAsync(id);
+            if (existingOutlet == null)
+                return NotFound("Outlet not found");
+
+            var result = await _outletRepo.DeleteOutletAsync(id);
+            if (!result)
+                return StatusCode(500, "An error occurred while deleting the outlet.");
+
+            return Ok(new { message = $"Outlet with ID {id} deleted successfully" });
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, "An error occurred while deleting the outlet.");
+        }
+    }
 
 }

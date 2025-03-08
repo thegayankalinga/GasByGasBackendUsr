@@ -60,4 +60,26 @@ public class DeliveryController: ControllerBase
         return Ok(scheduleModel.DeliverySheduleModelToResponseDto());
     }
     
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete([FromRoute] int id)
+    {
+        try
+        {
+            var existingSchedule = await _deliveryRepository.GetById(id);
+            if (existingSchedule == null)
+                return NotFound("Delivery schedule not found");
+
+            var result = await _deliveryRepository.DeleteAsync(id);
+            if (!result)
+                return StatusCode(500, "An error occurred while deleting the delivery schedule.");
+
+            return Ok(new { message = $"Delivery schedule with ID {id} deleted successfully" });
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, "An error occurred while deleting the delivery schedule.");
+        }
+    }
+    
 }

@@ -24,7 +24,7 @@ public static class UserMappers
         {
             Email = userModel.Email,
             FullName = userModel.FullName,
-            NIC = userModel.NIC,
+            NIC = userModel.Nic,
             BusinessRegistration = userModel.BusinessRegistration,
             IsConfirm = userModel.IsConfirm,
             PhoneNumber = userModel.PhoneNumber,

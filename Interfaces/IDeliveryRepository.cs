@@ -14,6 +14,8 @@ public interface IDeliveryRepository
     Task<List<DeliverySchedule>> GetAllAsync();
     
     Task<DeliverySchedule?> UpdateAsync(int id, DeliveryRequestDto scheduleRequest);
+    
+    Task<bool> DeleteAsync(int id);
 
 
 }

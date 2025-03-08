@@ -77,4 +77,14 @@ public class DeliveryRepository: IDeliveryRepository
         await _context.SaveChangesAsync();
         return deliveryScheduleModel;
     }
+    
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var deliverySchedule = await _context.DeliverySchedules.FindAsync(id);
+        if (deliverySchedule == null) return false;
+
+        _context.DeliverySchedules.Remove(deliverySchedule);
+        await _context.SaveChangesAsync();
+        return true;
+    }
 }

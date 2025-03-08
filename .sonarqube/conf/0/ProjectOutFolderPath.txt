@@ -1,0 +1,1 @@
+/Users/gayan/Developer/GasByGas/backend/.sonarqube/out/0

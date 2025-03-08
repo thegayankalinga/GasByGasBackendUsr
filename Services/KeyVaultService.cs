@@ -24,4 +24,5 @@ public class KeyVaultService : IKeyVaultService
         KeyVaultSecret secret = await _secretClient.GetSecretAsync(secretName);
         return secret.Value;
     }
+    
 }

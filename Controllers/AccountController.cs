@@ -191,7 +191,7 @@ public class AccountController : ControllerBase
                     Email = requestDto.Email,
                     UserName = requestDto.Email,
                     FullName = requestDto.FullName,
-                    NIC = requestDto.NIC,
+                    Nic = requestDto.NIC,
                     PhoneNumber = requestDto.PhoneNumber,
                     Address = requestDto.Address,
                     City = requestDto.City,
@@ -214,7 +214,7 @@ public class AccountController : ControllerBase
                         {
                             Email = appUser.Email,
                             FullName = appUser.FullName,
-                            NIC = appUser.NIC,
+                            NIC = appUser.Nic,
                             PhoneNumber = appUser.PhoneNumber,
                             Address = appUser.Address,
                             City = appUser.City,
@@ -337,7 +337,7 @@ public class AccountController : ControllerBase
         {
             Email = user.Email ?? throw new InvalidOperationException(),
             FullName = user.FullName ?? throw new InvalidOperationException(),
-            NIC = user.NIC,
+            NIC = user.Nic,
             BusinessRegistration = user.BusinessRegistration,
             IsConfirm = user.IsConfirm,
             OutletId = user.OutletId,
@@ -371,7 +371,7 @@ public class AccountController : ControllerBase
 
             if (updateUserDto.ConsumerType == UserType.Personal)
             {
-                user.NIC = updateUserDto.NIC ?? user.NIC;
+                user.Nic = updateUserDto.NIC ?? user.Nic;
                 user.City = updateUserDto.City ?? user.City;
                 user.Address = updateUserDto.Address ?? user.Address;
                
@@ -400,7 +400,7 @@ public class AccountController : ControllerBase
                 //Force unwrap the null here
                 Email = updatedUser!.Email ?? throw new InvalidOperationException(),
                 FullName = updatedUser.FullName ?? throw new InvalidOperationException(),
-                NIC = updatedUser.NIC,
+                NIC = updatedUser.Nic,
                 BusinessRegistration = updatedUser.BusinessRegistration,
                 IsConfirm = updatedUser.IsConfirm,
                 OutletId = updatedUser.OutletId,
@@ -503,6 +503,27 @@ public class AccountController : ControllerBase
         {
             Console.WriteLine(e);
             return StatusCode(500, e.Message);
+        }
+    }
+    
+    [HttpDelete("delete-user/{email}")]
+    public async Task<IActionResult> DeleteUser([FromRoute] string email)
+    {
+        try
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+                return NotFound("User not found");
+
+            var result = await _userManager.DeleteAsync(user);
+            if (!result.Succeeded)
+                return StatusCode(500, result.Errors);
+
+            return Ok(new { message = $"User {email} deleted successfully" });
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "An error occurred while deleting the user.");
         }
     }
     

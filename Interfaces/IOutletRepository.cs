@@ -10,4 +10,6 @@ public interface IOutletRepository
     Task<bool> OutletExists(int id);
 
     Task<Outlet> CreateOutletAsync(Outlet outletModel);
+    
+    Task<bool> DeleteOutletAsync(int id);
 }

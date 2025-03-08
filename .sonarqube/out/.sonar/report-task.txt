@@ -1,0 +1,6 @@
+projectKey=GasByGas
+serverUrl=http://localhost:9000
+serverVersion=25.3.0.104237
+dashboardUrl=http://localhost:9000/dashboard?id=GasByGas
+ceTaskId=5c1d413e-534b-4c17-b1a9-75ca2cd62dea
+ceTaskUrl=http://localhost:9000/api/ce/task?id=5c1d413e-534b-4c17-b1a9-75ca2cd62dea

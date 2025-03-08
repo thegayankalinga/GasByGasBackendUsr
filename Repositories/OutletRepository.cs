@@ -34,4 +34,14 @@ public class OutletRepository : IOutletRepository
          await _context.SaveChangesAsync();
          return outletModel;
     }
+    
+    public async Task<bool> DeleteOutletAsync(int id)
+    {
+        var outlet = await _context.Outlets.FindAsync(id);
+        if (outlet == null) return false;
+
+        _context.Outlets.Remove(outlet);
+        await _context.SaveChangesAsync();
+        return true;
+    }
 }
