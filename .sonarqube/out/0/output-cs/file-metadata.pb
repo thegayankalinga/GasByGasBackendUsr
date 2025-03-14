@@ -1,8 +1,9 @@
 n
-c/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.MvcApplicationPartsAssemblyInfo.csutf-8[
-P/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.AssemblyInfo.csutf-8r
-g/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.csutf-8]
-R/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.GlobalUsings.g.csutf-8I
+c/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.MvcApplicationPartsAssemblyInfo.csutf-8r
+g/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.csutf-8[
+P/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.AssemblyInfo.csutf-8]
+R/Users/gayan/Developer/GasByGas/backend/obj/Debug/net9.0/backend.GlobalUsings.g.csutf-8|
+q/Users/gayan/.nuget/packages/microsoft.net.test.sdk/17.13.0/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.csutf-8I
 @/Users/gayan/Developer/GasByGas/backend/Services/TokenService.csutf-8G
 >/Users/gayan/Developer/GasByGas/backend/Services/SmsService.csutf-8M
 D/Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.csutf-8H
@@ -20,7 +21,9 @@ I/Users/gayan/Developer/GasByGas/backend/Repositories/AccountRepository.csutf-
 :/Users/gayan/Developer/GasByGas/backend/Models/GasToken.csutf-8K
 B/Users/gayan/Developer/GasByGas/backend/Models/DeliverySchedule.csutf-8B
 9/Users/gayan/Developer/GasByGas/backend/Models/AppUser.csutf-8b
-W/Users/gayan/Developer/GasByGas/backend/Migrations/ApplicationDbContextModelSnapshot.csutf-8a
+W/Users/gayan/Developer/GasByGas/backend/Migrations/ApplicationDbContextModelSnapshot.csutf-8p
+e/Users/gayan/Developer/GasByGas/backend/Migrations/20250308192637_NonOptionalStockRequest.Designer.csutf-8e
+\/Users/gayan/Developer/GasByGas/backend/Migrations/20250308192637_NonOptionalStockRequest.csutf-8a
 V/Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.Designer.csutf-8V
 M/Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.csutf-8j
 _/Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenTable.Designer.csutf-8_
@@ -92,7 +95,8 @@ D/Users/gayan/Developer/GasByGas/backend/Data/ApplicationDbContext.csutf-8O
 F/Users/gayan/Developer/GasByGas/backend/Controllers/TokenController.csutf-8O
 F/Users/gayan/Developer/GasByGas/backend/Controllers/StockController.csutf-8S
 J/Users/gayan/Developer/GasByGas/backend/Controllers/SchedulerController.csutf-8P
-G/Users/gayan/Developer/GasByGas/backend/Controllers/OutletController.csutf-8V
-M/Users/gayan/Developer/GasByGas/backend/Controllers/NotificationController.csutf-8R
-I/Users/gayan/Developer/GasByGas/backend/Controllers/DeliveryController.csutf-8Q
-H/Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.csutf-8
+G/Users/gayan/Developer/GasByGas/backend/Controllers/OutletController.csutf-8R
+I/Users/gayan/Developer/GasByGas/backend/Controllers/DeliveryController.csutf-8V
+M/Users/gayan/Developer/GasByGas/backend/Controllers/NotificationController.csutf-8Q
+H/Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.csutf-8Y
+P/Users/gayan/Developer/GasByGas/backend/backend.Tests/DeliveryControllerTests.csutf-8

@@ -2,8 +2,8 @@
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
   <ProjectName>backend</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
-  <ProjectType>Product</ProjectType>
-  <ProjectGuid>c5cd1f64-9523-4935-9424-630635c4cbef</ProjectGuid>
+  <ProjectType>Test</ProjectType>
+  <ProjectGuid>a5619a52-dc42-4712-9c7d-a754be2fd2b7</ProjectGuid>
   <FullPath>/Users/gayan/Developer/GasByGas/backend/backend.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>

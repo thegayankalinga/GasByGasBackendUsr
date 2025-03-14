@@ -1,0 +1,6 @@
+×
+P/Users/gayan/Developer/GasByGas/backend/backend.Tests/DeliveryControllerTests.csbackendd
+-backend.backend.Tests.DeliveryControllerTests3Create_ShouldReturnCreatedResponse_WhenValidRequestc
+-backend.backend.Tests.DeliveryControllerTests2GetById_ShouldReturnNotFound_WhenDeliveryNotExistsT
+-backend.backend.Tests.DeliveryControllerTests#GetAll_ShouldReturnListOfDeliveriesY
+-backend.backend.Tests.DeliveryControllerTests(Delete_ShouldReturnOk_WhenDeliveryExists

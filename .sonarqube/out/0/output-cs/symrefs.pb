@@ -18,30 +18,7 @@
 22 77! ,
 33 <<- =
 ;; <<  == 
-<< ==' ,˛
->/Users/gayan/Developer/GasByGas/backend/Services/SmsService.cs
-
-
-
- 
- 00 
- 008 >
-& 6  +
-" &"" (( 
- ## 00s z
-' 6 *
- )** $(
- ! '""? E## 
-
-&& (
-&&0 900" +
-&&B I00^ e
--- 441 7
-// 11 $44A K
-44  (55* 2
-55 !77G U99 ,
-77 88 (
-88 :: Ä
+<< ==' ,Ä
 D/Users/gayan/Developer/GasByGas/backend/Services/SchedulerService.cs
  !! 1J Z
 * : CC /Z
@@ -118,7 +95,30 @@ D/Users/gayan/Developer/GasByGas/backend/Services/EnumSchemaFilter.cs
 - 7: D  
 j ko p(
 $ 7 2X k )
- 1 6Î
+ 1 6˛
+>/Users/gayan/Developer/GasByGas/backend/Services/SmsService.cs
+
+
+
+ 
+ 00 
+ 008 >
+& 6  +
+" &"" (( 
+ ## 00s z
+' 6 *
+ )** $(
+ ! '""? E## 
+
+&& (
+&&0 900" +
+&&B I00^ e
+-- 441 7
+// 11 $44A K
+44  (55* 2
+55 !77G U99 ,
+77 88 (
+88 :: Î
 G/Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs
 
 		 Ç
@@ -148,44 +148,24 @@ G/Users/gayan/Developer/GasByGas/backend/Repositories/StockRepository.cs
 
 CC% <
 CCA CEEB D(
-EE GG LL $NN º
-H/Users/gayan/Developer/GasByGas/backend/Repositories/OutletRepository.cs
+EE GG LL $NN ›
+I/Users/gayan/Developer/GasByGas/backend/Repositories/AccountRepository.cs
 
- d
-
-
-* 2    !! "" (( #++ ,, 
-1 8 
+		 2
+* 2   " *
+2 9 
 
-$ 6
+ &
+. 3= B
+- .2 3
 
- 0
-5 7G I
-: ;? @
+% ?
+D L= E
+* +/ 0
 
- (
-- /< >
-/ 04 5
-
- /
-7 B!!) 4## 
-
-&& -
-&&2 4((6 8
-(( )) ++  &Ç
-8/Users/gayan/Developer/GasByGas/backend/Models/Outlet.cs
-
- 
-
- 
-
- %
-
-  
-
- 
-
- º	
+% 6
+ "" (
+    !    !º	
 J/Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs
 
 
@@ -236,62 +216,7 @@ J/Users/gayan/Developer/GasByGas/backend/Repositories/GasTokenRepository.cs
 
 qq& K
 qqP bssK ]
-ss. /ss3 4é
-2/Users/gayan/Developer/GasByGas/backend/Program.csÚ
-         !! "" ## $$ %% && (( )) ++ .. 66 UU WW  ZZ ]] aa cc pp }} ~~ 
-ââ
- 2
-4 ;    
-..  00 
-11 11 2
-66 %99 
-:: 
-<< 
-EE 
-
-UU4 ;WW 
-ZZ [[ %^^ 
-aa 
-ÅÅ/ 9Z
-cc4 ;ee ff gg hh ii kk ll mm F
-pp# *rr ss tt uu vv ww 
-xx zz ê
-
-ââ 
-åå 
-íí 
-íí' *
-ííI L
-ïï 
-ññ ®® ©© ™™ ≠≠ ÆÆ ∞∞ 
-
-åå 
-çç .
-
-çç 
-
-ññ ¨
->/Users/gayan/Developer/GasByGas/backend/Models/StockRequest.cs
-
- 
-
- 
-
-
-
-  
-
- *
-
- "
-
- 
-
- "
-
-  
-
- "Ô
+ss. /ss3 4Ô
 J/Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs
 
 		 Ç
@@ -323,24 +248,93 @@ J/Users/gayan/Developer/GasByGas/backend/Repositories/DeliveryRepository.cs
 
 QQ '
 QQ, .SSJ L
-SS TT VV* :›
-I/Users/gayan/Developer/GasByGas/backend/Repositories/AccountRepository.cs
+SS TT VV* :º
+H/Users/gayan/Developer/GasByGas/backend/Repositories/OutletRepository.cs
 
-		 2
-* 2   " *
-2 9 
+ d
+
+
+* 2    !! "" (( #++ ,, 
+1 8 
 
- &
-. 3= B
-- .2 3
+$ 6
 
-% ?
-D L= E
-* +/ 0
+ 0
+5 7G I
+: ;? @
 
-% 6
- "" (
-    !    !‰
+ (
+- /< >
+/ 04 5
+
+ /
+7 B!!) 4## 
+
+&& -
+&&2 4((6 8
+(( )) ++  &“
+2/Users/gayan/Developer/GasByGas/backend/Program.csÍ
+      !! "" ## $$ %% && (( )) ** -- 55 TT VV  YY \\ `` bb oo || }} 
+àà
+ 2
+4 ;    
+--  // 
+00 00 2
+55 %88 
+99 
+;; 
+DD 
+
+TT4 ;VV 
+YY ZZ %]] 
+`` 
+ÄÄ/ 9Z
+bb4 ;dd ee ff gg hh jj kk ll F
+oo# *qq rr ss tt uu vv 
+ww yy Ñ
+
+àà 
+ãã 
+ãã' *
+ããI L
+éé 
+èè °° ¢¢ ££ ¶¶ ßß ©© 
+
+èè ¨
+>/Users/gayan/Developer/GasByGas/backend/Models/StockRequest.cs
+
+ 
+
+ 
+
+
+
+  
+
+ *
+
+ "
+
+ 
+
+ "
+
+  
+
+ "Ç
+8/Users/gayan/Developer/GasByGas/backend/Models/Outlet.cs
+
+ 
+
+ 
+
+ %
+
+  
+
+ 
+
+ ‰
 :/Users/gayan/Developer/GasByGas/backend/Models/GasToken.cs
 
  
@@ -371,7 +365,24 @@ I/Users/gayan/Developer/GasByGas/backend/Repositories/AccountRepository.cs
 
 %%  
 
-'' "ø
+'' "ò
+B/Users/gayan/Developer/GasByGas/backend/Models/DeliverySchedule.cs
+
+ 
+
+ 
+
+		 )
+
+
+
+ )
+
+ +
+
+  
+
+ .ø
 9/Users/gayan/Developer/GasByGas/backend/Models/AppUser.cs
 
  
@@ -396,24 +407,18 @@ I/Users/gayan/Developer/GasByGas/backend/Repositories/AccountRepository.cs
 
 !! $
 
-## )ò
-B/Users/gayan/Developer/GasByGas/backend/Models/DeliverySchedule.cs
-
- 
-
- 
-
-		 )
+## )Í
+\/Users/gayan/Developer/GasByGas/backend/Migrations/20250308192637_NonOptionalStockRequest.cs
 
 
 
- )
+ 0
 
- +
+  "2
+4 D    
 
-  
-
- .Ô
+**  $2
+**6 F,, 11 66 ;; Ô
 M/Users/gayan/Developer/GasByGas/backend/Migrations/20250308175951_NICtoNic.cs
 
 
@@ -446,18 +451,7 @@ V/Users/gayan/Developer/GasByGas/backend/Migrations/20250308170938_UpdatedTokenT
 4 D    "" ** 
 
 66  $F
-666 F88 == BB GG KK RR ç
-W/Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs
-
-
-
- +
-
-  "F
-4 D    %% ,, 
-
-88  $F
-886 F:: ?? DD II MM QQ Î
+666 F88 == BB GG KK RR Î
 U/Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAdded.cs
 
  )
@@ -469,7 +463,18 @@ U/Users/gayan/Developer/GasByGas/backend/Migrations/20250308143719_StockEntityAd
 --9 :--> ?
 
 <<  $<
-<<6 F>> AA FF KK PP î
+<<6 F>> AA FF KK PP ç
+W/Users/gayan/Developer/GasByGas/backend/Migrations/20250308155557_UpdatetoStockTable.cs
+
+
+
+ +
+
+  "F
+4 D    %% ,, 
+
+88  $F
+886 F:: ?? DD II MM QQ î
 ^/Users/gayan/Developer/GasByGas/backend/Migrations/20250204150718_AddedNoOfAllowedCylinders.cs
 
 
@@ -491,7 +496,18 @@ Y/Users/gayan/Developer/GasByGas/backend/Migrations/20250204143135_AddOutletIdTo
 4 D    $$ 
 
 00  $<
-006 F22 77 << AA EE 
+006 F22 77 << AA EE û
+T/Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs
+
+
+
+ (
+
+  "P
+4 D    ## ** 11 
+
+==  $P
+==6 F?? DD II NN RR VV [[ 
 Z/Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliveryScheduleTable.cs
 
  .
@@ -503,18 +519,7 @@ Z/Users/gayan/Developer/GasByGas/backend/Migrations/20250113185910_DeliverySched
 --= >--B C
 
 <<  $<
-<<6 F>> AA FF KK PP û
-T/Users/gayan/Developer/GasByGas/backend/Migrations/20250204142215_UpdatetoAppUser.cs
-
-
-
- (
-
-  "P
-4 D    ## ** 11 
-
-==  $P
-==6 F?? DD II NN RR VV [[ ƒ
+<<6 F>> AA FF KK PP ƒ
 S/Users/gayan/Developer/GasByGas/backend/Migrations/20250113182339_NewThreeTables.cs
 
  '
@@ -576,7 +581,105 @@ S/Users/gayan/Developer/GasByGas/backend/Migrations/20250113150334_AddOutletMode
 YY6 F[[ `` ee jj nn xx 
 ÇÇ 
 åå 
-ññ —
+ññ ø
+>/Users/gayan/Developer/GasByGas/backend/Mappers/TokenMapper.cs
+
+ 
+
+
+
+# 5å
+
+
+D N  $ "! +    $% / ! " !! +
+
+ 4
+P ^##! /%% %
+d l'' 
+u ~&& !l
+F/Users/gayan/Developer/GasByGas/backend/Interfaces/IKeyVaultService.cs
+
+ !
+
+ 
+
+' 1ª
+I/Users/gayan/Developer/GasByGas/backend/Interfaces/IGasTokenRepository.cs
+
+ $
+
+  +
+
+
+
+ 
+
+
+
+( 5
+
+  
+
+% '
+
+ +
+
+3 8
+
+ ,
+
+1 9
+
+ 2
+
+7 9
+
+Q _
+
+ $
+
+) +
+
+< J
+
+ $
+
+) +
+
+ >
+
+C Ui
+C/Users/gayan/Developer/GasByGas/backend/Interfaces/ITokenService.cs
+
+ 
+
+ 
+
+% )í
+H/Users/gayan/Developer/GasByGas/backend/Interfaces/IAccountRepository.cs
+
+ #
+
+ 
+
+! &
+
+ 2
+
+7 ?
+
+
+
+ )s
+A/Users/gayan/Developer/GasByGas/backend/Interfaces/ISmsService.cs
+
+ 
+
+ 
+
+# ,
+
+5 <—
 U/Users/gayan/Developer/GasByGas/backend/Migrations/20250113075023_InitialMigration.cs
 
  )
@@ -663,22 +766,28 @@ U/Users/gayan/Developer/GasByGas/backend/Migrations/20250113075023_InitialMigrat
 		E N    ! $  
 
 & ;x
-I R    # , ! #    !!  ""# ,##( 1ø
->/Users/gayan/Developer/GasByGas/backend/Mappers/TokenMapper.cs
+I R    # , ! #    !!  ""# ,##( 1µ
+G/Users/gayan/Developer/GasByGas/backend/Dtos/GasToken/UpdateTokenDto.cs
 
- 
+ 
+
+		 
 
 
 
-# 5å
-
-
-D N  $ "! +    $% / ! " !! +
+ /
 
- 4
-P ^##! /%% %
-d l'' 
-u ~&& !‡
+# )
+
+ '
+
+ 
+
+  
+
+ $
+
+ "‡
 >/Users/gayan/Developer/GasByGas/backend/Mappers/StockMapper.cs
 
  
@@ -705,21 +814,42 @@ I/Users/gayan/Developer/GasByGas/backend/Mappers/DeliveryScheduleMapper.cs
 		^ s & 0 4" 7 ," 7
 
 # D<
-] o - 1" 4 )  " 4i
-C/Users/gayan/Developer/GasByGas/backend/Interfaces/ITokenService.cs
+] o - 1" 4 )  " 4ˇ
+I/Users/gayan/Developer/GasByGas/backend/Interfaces/IDeliveryRepository.cs
 
- 
+ $
 
- 
+ &
 
-% )l
-F/Users/gayan/Developer/GasByGas/backend/Interfaces/IKeyVaultService.cs
+8 M
 
- !
+		 
 
- 
+		" $
 
-' 1¸
+
+
+! >
+
+
+
+H L
+
+ #
+
+( *
+
+! ,
+
+ '
+
+, .
+
+C R
+
+ 
+
+ !¸
 F/Users/gayan/Developer/GasByGas/backend/Interfaces/IStockRepository.cs
 
  !
@@ -754,16 +884,10 @@ F/Users/gayan/Developer/GasByGas/backend/Interfaces/IStockRepository.cs
 
  /
 
-4 6s
-A/Users/gayan/Developer/GasByGas/backend/Interfaces/ISmsService.cs
+4 6G
+9/Users/gayan/Developer/GasByGas/backend/Enums/UserType.cs
 
- 
-
- 
-
-# ,
-
-5 <¡
+ ¡
 G/Users/gayan/Developer/GasByGas/backend/Interfaces/IOutletRepository.cs
 
  "
@@ -801,121 +925,18 @@ B/Users/gayan/Developer/GasByGas/backend/Interfaces/IMailService.cs
 
 D K
 
-T Xª
-I/Users/gayan/Developer/GasByGas/backend/Interfaces/IGasTokenRepository.cs
+T Xà
+J/Users/gayan/Developer/GasByGas/backend/Dtos/Outlet/NewOutletRequestDto.cs
 
- $
+  
 
-  +
+ %
 
-
-
- 
+ (
 
-
-
-( 5
+		 
 
-  
-
-% '
-
- +
-
-3 8
-
- ,
-
-1 9
-
- 2
-
-7 9
-
-Q _
-
- $
-
-) +
-
-< J
-
- $
-
-) +
-
- >
-
-C Uˇ
-I/Users/gayan/Developer/GasByGas/backend/Interfaces/IDeliveryRepository.cs
-
- $
-
- &
-
-8 M
-
-		 
-
-		" $
-
-
-
-! >
-
-
-
-H L
-
- #
-
-( *
-
-! ,
-
- '
-
-, .
-
-C R
-
- 
-
- !í
-H/Users/gayan/Developer/GasByGas/backend/Interfaces/IAccountRepository.cs
-
- #
-
- 
-
-! &
-
- 2
-
-7 ?
-
-
-
- )G
-9/Users/gayan/Developer/GasByGas/backend/Enums/UserType.cs
-
- M
-?/Users/gayan/Developer/GasByGas/backend/Enums/GasTokenStatus.cs
-
- £
-Y/Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestUpdateRequestDto.cs
-
- )
-
- 
-
- "
-
-		 
-
- "
-
- #¡
+ ¡
 S/Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestReponseDto.cs
 
  #
@@ -936,7 +957,41 @@ S/Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestReponseDt
 
   
 
- "r
+ "M
+?/Users/gayan/Developer/GasByGas/backend/Enums/GasTokenStatus.cs
+
+ £
+Y/Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestUpdateRequestDto.cs
+
+ )
+
+ 
+
+ "
+
+		 
+
+ "
+
+ #p
+J/Users/gayan/Developer/GasByGas/backend/Dtos/Notification/SmsRequestDto.cs
+
+ 
+
+ 
+
+ ä
+L/Users/gayan/Developer/GasByGas/backend/Dtos/Notification/EmailRequestDto.cs
+
+ 
+
+ "
+
+ !
+
+ "
+
+ r
 L/Users/gayan/Developer/GasByGas/backend/Dtos/StockRequest/StockRequestDto.cs
 
  
@@ -956,57 +1011,34 @@ H/Users/gayan/Developer/GasByGas/backend/Dtos/Outlet/OutletResponseDto.cs
 
  
 
- à
-J/Users/gayan/Developer/GasByGas/backend/Dtos/Outlet/NewOutletRequestDto.cs
+ ‡
+N/Users/gayan/Developer/GasByGas/backend/Dtos/Account/UserRegisterRequestDto.cs
 
-  
-
- %
-
- (
-
-		 
-
- p
-J/Users/gayan/Developer/GasByGas/backend/Dtos/Notification/SmsRequestDto.cs
-
- 
-
- 
-
- ä
-L/Users/gayan/Developer/GasByGas/backend/Dtos/Notification/EmailRequestDto.cs
-
- 
-
- "
-
- !
-
- "
-
- µ
-G/Users/gayan/Developer/GasByGas/backend/Dtos/GasToken/UpdateTokenDto.cs
-
- 
-
-		 
+ #
 
 
 
- /
+  
 
-# )
+ #
 
- '
+ #
 
- 
+ 
 
-  
+ '
 
- $
+ &
 
- "Û
+"" 
+
+$$ 
+
+'' 
+
+++ 
+
+-- $Û
 I/Users/gayan/Developer/GasByGas/backend/Dtos/GasToken/TokenResponseDto.cs
 
  
@@ -1076,34 +1108,7 @@ S/Users/gayan/Developer/GasByGas/backend/Dtos/DeliverySchedule/DeliveryRequestDt
 
   
 
- .‡
-N/Users/gayan/Developer/GasByGas/backend/Dtos/Account/UserRegisterRequestDto.cs
-
- #
-
-
-
-  
-
- #
-
- #
-
- 
-
- '
-
- &
-
-"" 
-
-$$ 
-
-'' 
-
-++ 
-
--- $ø
+ .ø
 E/Users/gayan/Developer/GasByGas/backend/Dtos/Account/UpdateUserDto.cs
 
  
@@ -1233,7 +1238,7 @@ D/Users/gayan/Developer/GasByGas/backend/Data/ApplicationDbContext.cs
 
 # 4
 
-  -
+ ,
 
  )
 B P 
@@ -1376,22 +1381,7 @@ G/Users/gayan/Developer/GasByGas/backend/Controllers/OutletController.cs
 44% 1(
 44B D88F H<<= ?@@8 :
 88 99 
-<< == È
-M/Users/gayan/Developer/GasByGas/backend/Controllers/NotificationController.cs
-
-		 #
-! ,  &
-" . %% '
-. 8  
-G R "
-
-% ,
-F S4 AM Z
-   $
-
-!!% .2
-!!J Y%%7 F%%P _&& &&% 4
-%% '' ø
+<< == ø
 I/Users/gayan/Developer/GasByGas/backend/Controllers/DeliveryController.cs
 
 		 P
@@ -1422,7 +1412,22 @@ I/Users/gayan/Developer/GasByGas/backend/Controllers/DeliveryController.cs
 @@% +(
 @@< >DDE GHH? ALLC E
 DD  EE  
-HH II ¯
+HH II È
+M/Users/gayan/Developer/GasByGas/backend/Controllers/NotificationController.cs
+
+		 #
+! ,  &
+" . %% '
+. 8  
+G R "
+
+% ,
+F S4 AM Z
+   $
+
+!!% .2
+!!J Y%%7 F%%P _&& &&% 4
+%% '' ¯
 H/Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs
 
  Ä
@@ -1752,4 +1757,36 @@ H/Users/gayan/Developer/GasByGas/backend/Controllers/AccountController.cs
 
 ÜÜ 
 áá 
-àà' -
+àà' -ﬁ
+P/Users/gayan/Developer/GasByGas/backend/backend.Tests/DeliveryControllerTests.cs
+
+ $P
+/ F 5 L77 #EE #]] #ll #uu #(
+- B U j66 !<
+( ; :: 2HH 2`` 2xx 2
+
+!! M
+$$ 66< C::: A
+,, 77i v
+66( )66- .
+77* +77/ 0
+:: ==M S
+== %>> 3
+
+BB L
+EE* +EE/ 0
+HH KK? E
+KK LL ,
+
+PP =
+SS ]]M W
+]]* +]]/ 0
+`` cc9 ?
+cc ddD L
+dd ee %
+
+ii B
+ll* +ll/ 0
+uu* +uu/ 0
+xx {{9 ?
+{{ || &

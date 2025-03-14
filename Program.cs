@@ -45,7 +45,7 @@ builder.Services.AddHostedService<SchedulerService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigins",
-        policy => policy.WithOrigins("http://localhost:5173","http://localhost:3000", "https://icy-wave-0c56fec00.4.azurestaticapps.net") // Replace with your React frontend URL
+        policy => policy.WithOrigins("http://localhost:5173","http://localhost:3000", "https://icy-wave-0c56fec00.4.azurestaticapps.net", "*") // Replace with your React frontend URL
             .AllowAnyHeader()
             .AllowAnyMethod());
 });

@@ -4,6 +4,6 @@
   <ProjectPath>/Users/gayan/Developer/GasByGas/backend/backend.csproj</ProjectPath>
   <FilesToAnalyzePath>/Users/gayan/Developer/GasByGas/backend/.sonarqube/conf/0/FilesToAnalyze.txt</FilesToAnalyzePath>
   <OutPath>/Users/gayan/Developer/GasByGas/backend/.sonarqube/out/0</OutPath>
-  <ProjectType>Product</ProjectType>
+  <ProjectType>Test</ProjectType>
   <TargetFramework>net9.0</TargetFramework>
 </SonarProjectConfig>
